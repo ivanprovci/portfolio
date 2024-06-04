@@ -16,8 +16,8 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/inter-latin-400-normal.woff2) format("woff2"),
-        url(/fonts/inter-latin-400-normal.woff) format("woff");
+    src: url(../dist/fonts/inter-latin-400-normal.woff2) format("woff2"),
+        url(../dist/fonts/inter-latin-400-normal.woff) format("woff");
 }
 
 /* semibold */
@@ -25,8 +25,8 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/inter-latin-500-normal.woff2) format("woff2"),
-        url(/fonts/inter-latin-500-normal.woff) format("woff");
+    src: url(../dist/fonts/inter-latin-500-normal.woff2) format("woff2"),
+        url(../dist/fonts/inter-latin-500-normal.woff) format("woff");
 }
 
 ::-webkit-scrollbar {
