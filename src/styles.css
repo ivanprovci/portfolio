@@ -1,17 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; /* your global css + normalize.css*/
+@tailwind components; /* your own custom classes */
+@tailwind utilities; /* all low-level classes that you use in .html files */
 
-@layer utilities {
+@layer components {
     .nav-link {
         @apply text-2xl inline-block relative pb-1
         after:absolute after:w-full after:bg-white after:h-[2px] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-left 
         hover:after:scale-x-100 hover:after:origin-bottom-right
         after:transition-all after:duration-[400];
     }
+
+    .projects-tool-used {
+        @apply border border-black rounded-full py-1 px-2 text-xs
+        hover:bg-black hover:text-white hover:transition;
+    }
 }
 
-/* normal */
+canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* regular */
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -20,13 +31,40 @@
         url(../dist/fonts/inter-latin-400-normal.woff) format("woff");
 }
 
-/* semibold */
+/* medium */
 @font-face {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     src: url(../dist/fonts/inter-latin-500-normal.woff2) format("woff2"),
         url(../dist/fonts/inter-latin-500-normal.woff) format("woff");
+}
+
+/* bold */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../dist/fonts/inter-latin-700-normal.woff2) format("woff2"),
+        url(../dist/fonts/inter-latin-700-normal.woff) format("woff");
+}
+
+/* extrabold */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    src: url(../dist/fonts/inter-latin-800-normal.woff2) format("woff2"),
+        url(../dist/fonts/inter-latin-800-normal.woff) format("woff");
+}
+
+/* black */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../dist/fonts/inter-latin-900-normal.woff2) format("woff2"),
+        url(../dist/fonts/inter-latin-900-normal.woff) format("woff");
 }
 
 ::-webkit-scrollbar {

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="text-white">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
-<body class="font-inter">
+<body class="font-inter text-white">
     <nav class="shadow-xl fixed w-full bg-primary z-10">
         <div class="flex justify-between px-10 py-5 max-w-screen-2xl mx-auto">
             <p class="font-medium text-2xl">&lt;Ivan &#47;&gt;</p>
@@ -23,7 +23,7 @@
     </nav>
 
     <section id="home" class="relative bg-primary h-screen">
-        <img src="images/hero.png" alt="hero" class="h-full w-full object-cover blur-md opacity-80">
+        <img src="assets/images/hero.png" alt="hero" class="h-full w-full object-cover blur-md opacity-80">
         <div class="absolute inset-0 flex justify-center items-center mb-[100px]">
             <div>
                 <h1 class="text-[220px] text-center tracking-tight leading-tight font-medium">I'm Ivan.</h1>
@@ -36,12 +36,211 @@
             </div>
         </div>
     </section>
-    <section id="about" class="h-screen bg-red-500">
+
+    <section id="about" class="h-screen bg-red-500 flex justify-center">
+        <div class="max-w-screen-2xl w-full px-10 my-[100px]">
+            <h1 class="text-5xl pb-8 font-bold">About</h1>
+
+        </div>
     </section>
-    <section id="projects" class="h-screen bg-yellow-500">
+
+    <section id="projects" class="flex justify-center bg-primary pb-16">
+        <div class="max-w-screen-2xl w-full px-10 my-[100px]">
+            <h1 class="text-5xl pb-8 font-bold">Projects</h1>
+            <div class="grid grid-cols-3 gap-4">
+                <!-- pixl sketch -->
+                <div class="shadow-xl flex flex-col">
+                    <img src="assets/images/project-pixl-sketch.PNG" alt="" class="rounded-t-lg">
+                    <div class="p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                        <div class="flex-1">
+                            <h2 class="font-extrabold text-3xl">Pixl Sketch</h2>
+                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                            <p>Pixl sketch is a drawing web app made with JavaScript and CSS as a submission for
+                                <a class="underline"
+                                    href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"
+                                    target="_blank">The Odin
+                                    Project</a>.
+                                This solo project was meant to practice dynamic JavaScript and DOM manipulation. The
+                                basic features include drawing, erasing, colour selecting, and resetting the grid to
+                                default. The fancier tools include pixel shading, pixel tinting, and a rainbow gradient
+                                pen!
+                            </p>
+                        </div>
+                        <div class="mt-14 flex justify-between">
+                            <div>
+                                <span class="projects-tool-used">JavaScript</span>
+                                <span class="projects-tool-used">CSS</span>
+                            </div>
+                            <div>
+                                <a class="border p-1 mr-3 border-red-600 text-red-600"
+                                    href="https://ivanprovci.github.io/pixl-sketch/" target="_blank">LIVE
+                                    DEMO</a>
+                                <a href="https://github.com/ivanprovci/pixl-sketch" target="_blank">GitHub
+                                    <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                        fill-rule="evenodd" clip-rule="evenodd">
+                                        <path
+                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- obsidian -->
+                <div class="shadow-xl flex flex-col">
+                    <img src="assets/images/project-obsidian.PNG" alt="" class="rounded-t-lg aspect-video">
+                    <div class="p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                        <div class="flex-1">
+                            <h2 class="font-extrabold text-3xl">Obsidian</h2>
+                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                            <p>Obsidian is a full-stack ecommerce web application that supports account registration,
+                                catalog filters, shopping cart functionality, and an account-based favourites section.
+                                The backend is built with PHP, and the front-end utilized Bootstrap for several
+                                components,
+                                and CSS for everything else. Account credentials were hashed and stored in a MySQL
+                                database,
+                                and can even be edited using the edit profile dropdown menu.
+                                The whole application is hosted using XAMPP's Apache and MySQL servers,
+                                which can be set up quickly by following the instructions in the README of the
+                                repository.
+                            </p>
+                        </div>
+                        <div class="mt-14 flex justify-between">
+                            <div>
+                                <span class="projects-tool-used">PHP</span>
+                                <span class="projects-tool-used">MySQL</span>
+                                <span class="projects-tool-used">Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/ivanprovci/Obsidian-Ecomm" target="_blank">GitHub
+                                <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                    <path
+                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- medical clinic  -->
+                <div class="shadow-xl flex flex-col">
+                    <img src="assets/images/project-medical-clinic.PNG" alt="" class="rounded-t-lg aspect-video">
+                    <div class="p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                        <div class="flex-1">
+                            <h2 class="font-extrabold text-3xl">BC Health & Wellness</h2>
+                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                            <p>BC Health & Wellness is a feature-rich medical clinic system built with a team of 5 for a
+                                'System Development Project' course. It supports patient, doctor, and staff accounts,
+                                each
+                                with their own account
+                                privileges. Patients can view their medical records, prescriptions, and lab exam
+                                results.
+                                Doctors can create new records, and the staff manage and approve accounts, without
+                                having
+                                access to confidential documents. I integrated the Spring Boot backend with the
+                                front-end
+                                by creating RESTful JavaScript API calls to our MySQL database. I plan on refactoring
+                                this
+                                project with Tailwind to polish up the mistakes we made back then.
+                            </p>
+                        </div>
+                        <div class="mt-14 flex justify-between">
+                            <div>
+                                <span class="projects-tool-used">JavaScript</span>
+                                <span class="projects-tool-used">MySQL</span>
+                                <span class="projects-tool-used">Java</span>
+                                <span class="projects-tool-used">CSS</span>
+                            </div>
+                            <a href="https://github.com/ivanprovci/medical-clinic-system" target="_blank">GitHub
+                                <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                    <path
+                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio  -->
+                <div class="shadow-xl flex flex-col">
+                    <img src="assets/images/project-portfolio.PNG" alt="" class="rounded-t-lg">
+                    <div class="p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                        <div class="flex-1">
+                            <h2 class="font-extrabold text-3xl">Portfolio</h2>
+                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                            <p>This porfolio project deserves to be on my portfolio! It's the first project where I
+                                truly
+                                spent a lot of time on the design process. It's also my first Tailwind project and, I
+                                have
+                                to admit, I'm a big fan. I had fun experimenting with a utility class based approach and
+                                learned a lot in the process. A mobile-responsive design is currently in the works.</p>
+                        </div>
+                        <div class="mt-14 flex justify-between">
+                            <div>
+                                <span class="projects-tool-used">Tailwind</span>
+                                <span class="projects-tool-used">Figma</span>
+                            </div>
+                            <a href="https://github.com/ivanprovci/portfolio" target="_blank">GitHub
+                                <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                    <path
+                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
-    <section id="contact" class="h-screen bg-green-500">
+
+    <section id="contact" class="h-screen bg-primary relative flex justify-center">
+        <div class="max-w-screen-2xl w-full px-10 my-[100px] absolute z-10">
+            <h1 class="text-5xl pb-8 font-bold">Contact</h1>
+            <div class="w-full p-12 bg-neutral-400 bg-opacity-10 backdrop-blur-md rounded-xl border border-neutral-700">
+                <h1 class="text-7xl mb-12">Let's 'Connect' &mdash;</h1>
+                <div class="text-2xl mb-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="inline-block mr-5" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                    </svg>
+                    <a href="mailto:ivanprovci@yahoo.com" class="mr-5" target="_blank">ivanprovci@yahoo.com</a>
+
+                    <button id="btn-copy-email" class="group bg-neutral-800 border-neutral-600 hover:bg-neutral-700 p-4 rounded-lg border 
+                        relative tooltip transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="max-h-10" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                        </svg>
+                        <span
+                            class="invisible group-hover:visible absolute text-base text-center px-2 py-1 rounded-md text-white bg-neutral-600 -top-11 -left-1">Copy</span>
+                    </button>
+
+                </div>
+                <div class="text-2xl mb-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="inline-block mr-5" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    <a href="https://github.com/ivanprovci" target="_blank">github.com/ivanprovci</a>
+                </div>
+                <div class="text-2xl mb-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="inline-block mr-5" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                    <a href="https://www.linkedin.com/in/ivanprovci/" target="_blank">linkedin/in/ivanprovci</a>
+                </div>
+
+            </div>
+        </div>
     </section>
+
+    <script src="assets/script.js" type="module"></script>
 </body>
 
 </html>
