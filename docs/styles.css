@@ -1069,11 +1069,6 @@ video {
   font-family: Inter, sans-serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1218,8 +1213,8 @@ canvas {
 
   font-weight: 400;
 
-  src: url(../dist/fonts/inter-latin-400-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-400-normal.woff) format("woff");
+  src: url(../docs/fonts/inter-latin-400-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-400-normal.woff) format("woff");
 }
 
 /* medium */
@@ -1231,8 +1226,8 @@ canvas {
 
   font-weight: 500;
 
-  src: url(../dist/fonts/inter-latin-500-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-500-normal.woff) format("woff");
+  src: url(../docs/fonts/inter-latin-500-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-500-normal.woff) format("woff");
 }
 
 /* bold */
@@ -1244,8 +1239,8 @@ canvas {
 
   font-weight: 700;
 
-  src: url(../dist/fonts/inter-latin-700-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-700-normal.woff) format("woff");
+  src: url(../docs/fonts/inter-latin-700-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-700-normal.woff) format("woff");
 }
 
 /* extrabold */
@@ -1257,8 +1252,8 @@ canvas {
 
   font-weight: 800;
 
-  src: url(../dist/fonts/inter-latin-800-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-800-normal.woff) format("woff");
+  src: url(../docs/fonts/inter-latin-800-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-800-normal.woff) format("woff");
 }
 
 /* black */
@@ -1270,8 +1265,8 @@ canvas {
 
   font-weight: 900;
 
-  src: url(../dist/fonts/inter-latin-900-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-900-normal.woff) format("woff");
+  src: url(../docs/fonts/inter-latin-900-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-900-normal.woff) format("woff");
 }
 
 ::-webkit-scrollbar {
@@ -1349,16 +1344,12 @@ canvas {
     justify-content: space-between;
   }
 
-  .sm\:gap-4 {
-    gap: 1rem;
+  .sm\:gap-5 {
+    gap: 1.25rem;
   }
 
   .sm\:gap-7 {
     gap: 1.75rem;
-  }
-
-  .sm\:gap-5 {
-    gap: 1.25rem;
   }
 
   .sm\:p-12 {

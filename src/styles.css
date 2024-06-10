@@ -27,8 +27,8 @@ canvas {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    src: url(../dist/fonts/inter-latin-400-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-400-normal.woff) format("woff");
+    src: url(../docs/fonts/inter-latin-400-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-400-normal.woff) format("woff");
 }
 
 /* medium */
@@ -36,8 +36,8 @@ canvas {
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
-    src: url(../dist/fonts/inter-latin-500-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-500-normal.woff) format("woff");
+    src: url(../docs/fonts/inter-latin-500-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-500-normal.woff) format("woff");
 }
 
 /* bold */
@@ -45,8 +45,8 @@ canvas {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    src: url(../dist/fonts/inter-latin-700-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-700-normal.woff) format("woff");
+    src: url(../docs/fonts/inter-latin-700-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-700-normal.woff) format("woff");
 }
 
 /* extrabold */
@@ -54,8 +54,8 @@ canvas {
     font-family: "Inter";
     font-style: normal;
     font-weight: 800;
-    src: url(../dist/fonts/inter-latin-800-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-800-normal.woff) format("woff");
+    src: url(../docs/fonts/inter-latin-800-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-800-normal.woff) format("woff");
 }
 
 /* black */
@@ -63,8 +63,8 @@ canvas {
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
-    src: url(../dist/fonts/inter-latin-900-normal.woff2) format("woff2"),
-        url(../dist/fonts/inter-latin-900-normal.woff) format("woff");
+    src: url(../docs/fonts/inter-latin-900-normal.woff2) format("woff2"),
+        url(../docs/fonts/inter-latin-900-normal.woff) format("woff");
 }
 
 ::-webkit-scrollbar {
