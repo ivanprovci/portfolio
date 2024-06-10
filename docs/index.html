@@ -10,7 +10,7 @@
 </head>
 
 <body class="font-inter text-white">
-    <nav class="hidden sm:block shadow-xl fixed w-full bg-primary z-10">
+    <nav class="hidden sm:block shadow-xl fixed w-full bg-primary z-50">
         <div class="flex justify-between px-10 py-5 max-w-screen-2xl mx-auto">
             <p class="font-medium text-xl md:text-2xl">&lt;Ivan &#47;&gt;</p>
             <div class="flex sm:gap-5 md:gap-12">
@@ -34,14 +34,14 @@
                 <p class="text-center text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider">Web Developer and
                     Student at KPU
                 </p>
-                <div class="flex justify-center gap-5 md:gap-10 mt-10 sm:mt-16">
+                <div class="flex justify-center gap-3 md:gap-10 mt-10 sm:mt-16">
                     <a class="ml-10" href="assets/documents/resume.pdf" download>
-                        <button class="border rounded-[30px] text-sm sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16 
+                        <button class="border rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16 
                             border-[#E5B60E] bg-gradient-to-r from-[#A37B39] to-[#E7B159]">RESUME.PDF</button>
                     </a>
                     <a class="mr-10" href="#contact">
                         <button
-                            class="border rounded-[30px] text-sm sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16">CONTACT
+                            class="border rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16">CONTACT
                             ME</button>
                     </a>
                 </div>
@@ -170,8 +170,33 @@
         </div>
     </section>
 
-    <section id="projects" class="flex justify-center bg-primary pb-16">
-        <div class="container w-full px-10 my-[100px]">
+    <section id="projects" class="flex justify-center bg-primary pb-16 relative">
+
+        <svg class="hidden lg:block absolute inset-0 w-full h-full opacity-40" width="1440" height="1263"
+            viewBox="0 0 1440 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_94_3)">
+                <path
+                    d="M-191 200C-191 209.2 -150.963 289.167 -130.944 328L147.005 438.5L569 505L699 639C832 655 989 863.5 963.5 882C927.399 908.191 1285.16 1025.33 1491.5 1062.5L1720 978.5L1243 844.5L1093 668L963.5 545L727 328L401 294.5L-191 200Z"
+                    fill="url(#paint0_linear_94_3)" />
+            </g>
+            <defs>
+                <filter id="filter0_f_94_3" x="-391" y="0" width="2311" height="1262.5" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_94_3" />
+                </filter>
+                <linearGradient id="paint0_linear_94_3" x1="-160.202" y1="229" x2="1271.56" y2="1492.53"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0075FF" />
+                    <stop offset="0.354898" stop-color="#1C0FB0" />
+                    <stop offset="0.685" stop-color="#A806B6" />
+                    <stop offset="1" stop-color="#3B0087" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <div class="container w-full px-10 my-[100px] relative z-10">
             <h1 class="text-5xl pb-8 font-bold">Projects</h1>
             <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 text-sm sm:text-lg">
                 <!-- pixl sketch -->
@@ -298,7 +323,7 @@
                                 spent a lot of time on the design process. It's also my first Tailwind project and, I
                                 have
                                 to admit, I'm a big fan. I had fun experimenting with a utility class based approach and
-                                learned a lot in the process. A mobile-responsive design is currently in the works.</p>
+                                learned a lot in the process. This website is also fully responsive on all devices.</p>
                         </div>
                         <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
                             <div class="mb-5 sm:mb-0">
@@ -318,21 +343,22 @@
             </div>
 
         </div>
+
     </section>
 
-    <section id="contact" class="h-screen bg-primary relative flex justify-center">
-        <div class="container w-full px-10 my-[100px] absolute z-10">
+    <section id="contact" class="min-h-screen bg-primary relative flex justify-center">
+        <div class="container w-full px-10 my-[100px] relative z-10">
             <h1 class="text-5xl pb-8 font-bold">Contact</h1>
             <div
                 class="w-full p-6 sm:p-12 bg-neutral-400 bg-opacity-10 backdrop-blur-md rounded-xl border border-neutral-700">
                 <h1 class="text-4xl md:text-5xl lg:text-7xl mb-12">Let's 'Connect' &mdash;</h1>
                 <div class="text-base sm:text-xl lg:text-2xl mb-7">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="inline-block max-h-6 sm:max-h-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                        class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
                         <path
                             d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
                     </svg>
-                    <a href="mailto:ivanprovci@yahoo.com" class="mr-5" target="_blank">ivanprovci@yahoo.com</a>
+                    <a href="mailto:ivanprovci@yahoo.com" class="sm:mr-5" target="_blank">ivanprovci@yahoo.com</a>
 
                     <button id="btn-copy-email" class="hidden sm:inline-block group bg-neutral-800 border-neutral-600 hover:bg-neutral-700 p-4 rounded-lg border 
                         relative tooltip transition-colors">
@@ -348,7 +374,7 @@
                 </div>
                 <div class="text-base sm:text-xl lg:text-2xl mb-7">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="inline-block max-h-6 sm:max-h-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                        class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
                         <path
                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                     </svg>
@@ -356,7 +382,7 @@
                 </div>
                 <div class="text-base sm:text-xl lg:text-2xl mb-7">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="inline-block max-h-6 sm:max-h-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                        class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
                         <path
                             d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                     </svg>
