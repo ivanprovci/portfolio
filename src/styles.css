@@ -4,14 +4,14 @@
 
 @layer components {
     .nav-link {
-        @apply text-2xl inline-block relative pb-1
+        @apply text-xl md:text-2xl inline-block relative pb-1
         after:absolute after:w-full after:bg-white after:h-[2px] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-left 
         hover:after:scale-x-100 hover:after:origin-bottom-right
         after:transition-all after:duration-[400];
     }
 
     .projects-tool-used {
-        @apply border border-black rounded-full py-1 px-2 text-xs
+        @apply border border-black rounded-full py-1 px-2 text-[10px] sm:text-xs
         hover:bg-black hover:text-white hover:transition;
     }
 }
