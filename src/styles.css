@@ -3,86 +3,86 @@
 @tailwind utilities; /* all low-level classes that you use in .html files */
 
 @layer components {
-    .nav-link {
-        @apply text-xl md:text-2xl inline-block relative pb-1
+	.nav-link {
+		@apply text-xl md:text-2xl inline-block relative pb-1
         after:absolute after:w-full after:bg-white after:h-[2px] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-left 
         hover:after:scale-x-100 hover:after:origin-bottom-right
         after:transition-all after:duration-[400];
-    }
+	}
 
-    .projects-tool-used {
-        @apply border border-black rounded-full py-1 px-2 text-[10px] sm:text-xs
+	.projects-tool-used {
+		@apply border border-black rounded-full py-1 px-2 text-[10px] sm:text-xs
         hover:bg-black hover:text-white hover:transition;
-    }
+	}
 }
 
 canvas {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
 }
 
 /* regular */
 @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    src: url(fonts/inter-latin-400-normal.woff2) format("woff2"),
-        url(fonts/inter-latin-400-normal.woff) format("woff");
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/inter-latin-400-normal.woff2) format("woff2"),
+		url(fonts/inter-latin-400-normal.woff) format("woff");
 }
 
 /* medium */
 @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    src: url(fonts/inter-latin-500-normal.woff2) format("woff2"),
-        url(fonts/inter-latin-500-normal.woff) format("woff");
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	src: url(fonts/inter-latin-500-normal.woff2) format("woff2"),
+		url(fonts/inter-latin-500-normal.woff) format("woff");
 }
 
 /* bold */
 @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    src: url(fonts/inter-latin-700-normal.woff2) format("woff2"),
-        url(fonts/inter-latin-700-normal.woff) format("woff");
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/inter-latin-700-normal.woff2) format("woff2"),
+		url(fonts/inter-latin-700-normal.woff) format("woff");
 }
 
 /* extrabold */
 @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 800;
-    src: url(fonts/inter-latin-800-normal.woff2) format("woff2"),
-        url(fonts/inter-latin-800-normal.woff) format("woff");
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 800;
+	src: url(fonts/inter-latin-800-normal.woff2) format("woff2"),
+		url(fonts/inter-latin-800-normal.woff) format("woff");
 }
 
 /* black */
 @font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 900;
-    src: url(fonts/inter-latin-900-normal.woff2) format("woff2"),
-        url(fonts/inter-latin-900-normal.woff) format("woff");
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 900;
+	src: url(fonts/inter-latin-900-normal.woff2) format("woff2"),
+		url(fonts/inter-latin-900-normal.woff) format("woff");
 }
 
 ::-webkit-scrollbar {
-    min-width: 0.65vw;
+	min-width: 0.65vw;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #000000;
+	background: #000000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+	background: #888;
+	border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+	background: #555;
 }
