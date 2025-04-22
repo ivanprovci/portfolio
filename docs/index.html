@@ -2,431 +2,437 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ivan's Portfolio</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="font-inter text-white">
-    <nav class="hidden sm:block shadow-xl fixed w-full bg-primary z-50">
-        <div class="flex justify-between px-10 py-5 max-w-screen-2xl mx-auto">
-            <p class="font-medium text-xl md:text-2xl">&lt;Ivan &#47;&gt;</p>
-            <div class="flex sm:gap-5 md:gap-12">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
+   <nav class="hidden sm:block shadow-xl fixed w-full bg-primary z-50">
+      <div class="flex justify-between px-10 py-5 max-w-screen-2xl mx-auto">
+         <p class="font-medium text-xl md:text-2xl">&lt;Ivan &#47;&gt;</p>
+         <div class="flex sm:gap-5 md:gap-12">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+         </div>
+      </div>
+   </nav>
 
-    <section id="home" class="relative bg-primary h-screen">
-        <img src="assets/images/hero.png" alt="hero" width="640" height="360"
-            class="h-full w-full object-cover blur-md opacity-80">
-        <div class="absolute inset-0 flex justify-center items-center mb-[100px]">
+   <section id="home" class="relative bg-primary h-screen">
+      <img src="assets/images/hero.png" alt="hero" width="640" height="360"
+         class="h-full w-full object-cover blur-md opacity-80">
+      <div class="absolute inset-0 flex justify-center items-center mb-[100px]">
+         <div>
+            <h1
+               class="w-full text-7xl sm:text-9xl md:text-[170px] lg:text-[220px] px-7 text-center tracking-tight leading-tight font-medium">
+               I'm Ivan.
+            </h1>
+            <p class="text-center text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider">
+               Web Developer and Student at KPU
+            </p>
+            <div class="flex justify-center gap-3 md:gap-10 mt-10 sm:mt-16">
+               <a class="ml-10" href="assets/documents/resume.pdf" download>
+                  <button
+                     class="btn-resume border font-bold rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16">RESUME
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-download inline" viewBox="0 0 16 16">
+                        <path
+                           d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                        <path
+                           d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                     </svg></button>
+
+               </a>
+               <a class="mr-10" href="#contact">
+                  <button
+                     class="border font-bold rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16 hover:scale-105 transition duration-500">CONTACT
+                     ME</button>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="about" class="min-h-screen bg-primary flex justify-center">
+      <div class="container w-full px-10 mt-[100px]">
+         <h1 class="text-5xl pb-8 font-bold">About</h1>
+         <div class="mb-12 flex flex-col-reverse items-center lg:flex-row text-stone-300">
             <div>
-                <h1
-                    class="w-full text-7xl sm:text-9xl md:text-[170px] lg:text-[220px] px-7 text-center tracking-tight leading-tight font-medium">
-                    I'm Ivan.
-                </h1>
-                <p class="text-center text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider">
-                    Web Developer and Student at KPU
-                </p>
-                <div class="flex justify-center gap-3 md:gap-10 mt-10 sm:mt-16">
-                    <a class="ml-10" href="assets/documents/resume.pdf" download>
-                        <button class="border rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16 
-                            border-[#E5B60E] bg-gradient-to-r from-[#A37B39] to-[#E7B159]">RESUME.PDF</button>
-                    </a>
-                    <a class="mr-10" href="#contact">
-                        <button
-                            class="border rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16">CONTACT
-                            ME</button>
-                    </a>
-                </div>
+               <h2 class="text-xl tracking-wider mb-5">ABOUT ME</h2>
+               <p class="text-sm sm:text-lg">I am currently a 4th year student at KPU, nearing the end of my
+                  studies. I am excited for the future and look forward to solving real-world problems in a work
+                  environment. I approach life with 100% effort in everything I do, and I believe that small,
+                  consistent improvements lead to success, as Rome wasn't built in a day.
+                  <br><br>
+                  Web development allows me to apply creativity to my solutions, and I become deeply focused on
+                  problems until I solve them. I love that each day brings new opportunities and challenges,
+                  offering an endless amount of learning possibilities. I enjoy experimenting with new frameworks
+                  and technologies, constantly seeking to expand my knowledge and skills. I'm passionate about
+                  creating applications with exceptional UI/UX design. I love the challenge of designing an
+                  interface that is accessible and intuitive for all users.
+               </p>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="min-h-screen bg-primary flex justify-center">
-        <div class="container w-full px-10 mt-[100px]">
-            <h1 class="text-5xl pb-8 font-bold">About</h1>
-            <div class="mb-12 flex flex-col-reverse items-center lg:flex-row text-stone-300">
-                <div>
-                    <h2 class="text-xl tracking-wider mb-5">ABOUT ME</h2>
-                    <p class="text-sm sm:text-lg">I am currently a 4th year student at KPU, nearing the end of my
-                        studies. I am excited for the future and look forward to solving real-world problems in a work
-                        environment. I approach life with 100% effort in everything I do, and I believe that small,
-                        consistent improvements lead to success, as Rome wasn't built in a day.
-                        <br><br>
-                        Web development allows me to apply creativity to my solutions, and I become deeply focused on
-                        problems until I solve them. I love that each day brings new opportunities and challenges,
-                        offering an endless amount of learning possibilities. I enjoy experimenting with new frameworks
-                        and technologies, constantly seeking to expand my knowledge and skills. I'm passionate about
-                        creating applications with exceptional UI/UX design. I love the challenge of designing an
-                        interface that is accessible and intuitive for all users.
-                    </p>
-                </div>
-                <div class="flex flex-col justify-evenly">
-                    <img src="assets/images/about-photo.png" alt="picture of ivan" width="350" height="350"
-                        loading="lazy" class="px-10 md:px-0 mb-10 lg:mt-0 lg:ml-[100px] min-w-[350px]">
-                </div>
+            <div class="flex flex-col justify-evenly">
+               <img src="assets/images/about-photo.png" alt="picture of ivan" width="350" height="350" loading="lazy"
+                  class="px-10 md:px-0 mb-10 lg:mt-0 lg:ml-[100px] min-w-[350px]">
             </div>
-            <div class="mb-12 text-stone-300 text-lg">
-                <h2 class="tracking-wider mb-5 text-xl">SKILLS</h2>
-                <div class="flex flex-wrap justify-center gap-3 sm:gap-7">
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-react.png" alt="react icon" loading="lazy" width="120"
-                                height="104" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">ReactJS</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-js.png" alt="javascript icon" loading="lazy" width="120"
-                                height="120" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">JavaScript</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-tailwind.png" alt="tailwind icon" loading="lazy" width="120"
-                                height="73" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">Tailwind</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-bootstrap.png" alt="bootstrap icon" loading="lazy" width="120"
-                                height="96" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">Bootstrap</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-java.png" alt="java icon" loading="lazy" width="120"
-                                height="120" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">Java</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-php.png" alt="php icon" loading="lazy" width="120" height="65"
-                                class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">PHP</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-cpp.png" alt="c++ icon" loading="lazy" width="120" height="135"
-                                class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">C++</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-mysql.png" alt="mysql icon" loading="lazy" width="120"
-                                height="120" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">MySQL</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-git.png" alt="git icon" loading="lazy" width="120" height="120"
-                                class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">Git</h3>
-                    </div>
-                    <div class="flex flex-col content-center">
-                        <div class="min-h-[130px] flex flex-col justify-evenly">
-                            <img src="assets/images/logo-figma.png" alt="figma icon" loading="lazy" width="120"
-                                height="120" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                        </div>
-                        <h3 class="text-center">Figma</h3>
-                    </div>
-                </div>
+         </div>
+         <div class="mb-12 text-stone-300 text-lg">
+            <h2 class="tracking-wider mb-5 text-xl">SKILLS</h2>
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-7">
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-react.png" alt="react icon" loading="lazy" width="120" height="104"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">ReactJS</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-js.png" alt="javascript icon" loading="lazy" width="120" height="120"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">JavaScript</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-tailwind.png" alt="tailwind icon" loading="lazy" width="120"
+                        height="73" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">Tailwind</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-bootstrap.png" alt="bootstrap icon" loading="lazy" width="120"
+                        height="96" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">Bootstrap</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-java.png" alt="java icon" loading="lazy" width="120" height="120"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">Java</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-php.png" alt="php icon" loading="lazy" width="120" height="65"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">PHP</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-cpp.png" alt="c++ icon" loading="lazy" width="120" height="135"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">C++</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-mysql.png" alt="mysql icon" loading="lazy" width="120" height="120"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">MySQL</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-git.png" alt="git icon" loading="lazy" width="120" height="120"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">Git</h3>
+               </div>
+               <div class="flex flex-col content-center">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo-figma.png" alt="figma icon" loading="lazy" width="120" height="120"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">Figma</h3>
+               </div>
             </div>
+         </div>
 
-            <div class="text-stone-300 text-lg">
-                <h2 class="tracking-wider mb-5 text-xl">RANDOM FACTS</h2>
-                <ul class="list-disc list-inside">
-                    <li class="text-sm sm:text-lg">I grew up in a little town called Novo Orahovo in Serbia</li>
-                    <li class="text-sm sm:text-lg">I moved to Canada when I was 11 years old</li>
-                    <li class="text-sm sm:text-lg">I am quadrilingual (speak 4 languages &mdash; Serbian, Hungarian,
-                        Ruthenian,
-                        English)</li>
-                    <li class="text-sm sm:text-lg">I love powerlifting & bodybuilding</li>
-                    <li class="text-sm sm:text-lg">My favourite video games are Counter Strike and Valorant</li>
-                    <li class="text-sm sm:text-lg">I'm a big Post Malone fan</li>
-                    <li class="text-sm sm:text-lg">I love oldschool 90s Hip-Hop/Rap</li>
-                    <li class="text-sm sm:text-lg">I have 2 cats: Tubby the tabby and Lily the tuxedo</li>
-                </ul>
+         <div class="text-stone-300 text-lg">
+            <h2 class="tracking-wider mb-5 text-xl">RANDOM FACTS</h2>
+            <ul class="list-disc list-inside">
+               <li class="text-sm sm:text-lg">I grew up in a little town called Novo Orahovo in Serbia</li>
+               <li class="text-sm sm:text-lg">I moved to Canada when I was 11 years old</li>
+               <li class="text-sm sm:text-lg">I am quadrilingual (speak 4 languages &mdash; Serbian, Hungarian,
+                  Ruthenian,
+                  English)</li>
+               <li class="text-sm sm:text-lg">I love powerlifting & bodybuilding</li>
+               <li class="text-sm sm:text-lg">My favourite video games are Counter Strike and Valorant</li>
+               <li class="text-sm sm:text-lg">I'm a big Post Malone fan</li>
+               <li class="text-sm sm:text-lg">I love oldschool 90s Hip-Hop/Rap</li>
+               <li class="text-sm sm:text-lg">I have 2 cats: Tubby the tabby and Lily the tuxedo</li>
+            </ul>
+         </div>
+
+      </div>
+   </section>
+
+   <section id="projects" class="flex justify-center bg-primary pb-16 relative">
+
+      <svg class="hidden lg:block absolute inset-0 w-full h-full opacity-40" width="1440" height="1263"
+         viewBox="0 0 1440 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <g filter="url(#filter0_f_94_3)">
+            <path
+               d="M-191 200C-191 209.2 -150.963 289.167 -130.944 328L147.005 438.5L569 505L699 639C832 655 989 863.5 963.5 882C927.399 908.191 1285.16 1025.33 1491.5 1062.5L1720 978.5L1243 844.5L1093 668L963.5 545L727 328L401 294.5L-191 200Z"
+               fill="url(#paint0_linear_94_3)" />
+         </g>
+         <defs>
+            <filter id="filter0_f_94_3" x="-391" y="0" width="2311" height="1262.5" filterUnits="userSpaceOnUse"
+               color-interpolation-filters="sRGB">
+               <feFlood flood-opacity="0" result="BackgroundImageFix" />
+               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+               <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_94_3" />
+            </filter>
+            <linearGradient id="paint0_linear_94_3" x1="-160.202" y1="229" x2="1271.56" y2="1492.53"
+               gradientUnits="userSpaceOnUse">
+               <stop stop-color="#0075FF" />
+               <stop offset="0.354898" stop-color="#1C0FB0" />
+               <stop offset="0.685" stop-color="#A806B6" />
+               <stop offset="1" stop-color="#3B0087" />
+            </linearGradient>
+         </defs>
+      </svg>
+
+      <div class="container w-full px-10 my-[100px] relative z-10">
+         <h1 class="text-5xl pb-8 font-bold">Projects</h1>
+         <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 text-sm sm:text-lg">
+            <!-- KPU Scheduler -->
+            <div class="shadow-xl flex flex-col">
+               <img src="assets/images/project-kpuscheduler.PNG" alt="pixl sketch project" width="700" height="405"
+                  loading="lazy" class="rounded-t-lg aspect-video">
+               <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                  <div class="flex-1">
+                     <h2 class="font-extrabold text-3xl">KPU Scheduler</h2>
+                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                     <p>For our capstone project, my team and I developed a web application for the IT department
+                        head at KPU to streamline semester schedule creation. Our product automates various
+                        steps, significantly speeding up the process while performing conflict checks to
+                        eliminate errors—a major improvement over the school's legacy system. I was responsible
+                        for building the backend, which involved routing with Express.js, implementing
+                        authentication with cookies and JWT, and managing the database connection and queries
+                        using Pocketbase. I was also in charge of the front-end where I implemented numerous
+                        CRUD operations, and ensured the UI was intuitive and interactive by utilizing JS and
+                        Bootstrap.
+                     </p>
+                  </div>
+                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                     <div class="mb-5 sm:mb-0">
+                        <span class="projects-tool-used">JS</span>
+                        <span class="projects-tool-used">Express</span>
+                        <span class="projects-tool-used">Pocketbase</span>
+                        <span class="projects-tool-used">Bootstrap</span>
+                     </div>
+                     <div>
+                        <a href="https://github.com/ivanprovci/KPU-Scheduler" target="_blank">GitHub
+                           <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                              fill-rule="evenodd" clip-rule="evenodd">
+                              <path
+                                 d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-        </div>
-    </section>
-
-    <section id="projects" class="flex justify-center bg-primary pb-16 relative">
-
-        <svg class="hidden lg:block absolute inset-0 w-full h-full opacity-40" width="1440" height="1263"
-            viewBox="0 0 1440 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_f_94_3)">
-                <path
-                    d="M-191 200C-191 209.2 -150.963 289.167 -130.944 328L147.005 438.5L569 505L699 639C832 655 989 863.5 963.5 882C927.399 908.191 1285.16 1025.33 1491.5 1062.5L1720 978.5L1243 844.5L1093 668L963.5 545L727 328L401 294.5L-191 200Z"
-                    fill="url(#paint0_linear_94_3)" />
-            </g>
-            <defs>
-                <filter id="filter0_f_94_3" x="-391" y="0" width="2311" height="1262.5" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_94_3" />
-                </filter>
-                <linearGradient id="paint0_linear_94_3" x1="-160.202" y1="229" x2="1271.56" y2="1492.53"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0075FF" />
-                    <stop offset="0.354898" stop-color="#1C0FB0" />
-                    <stop offset="0.685" stop-color="#A806B6" />
-                    <stop offset="1" stop-color="#3B0087" />
-                </linearGradient>
-            </defs>
-        </svg>
-
-        <div class="container w-full px-10 my-[100px] relative z-10">
-            <h1 class="text-5xl pb-8 font-bold">Projects</h1>
-            <div class="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 text-sm sm:text-lg">
-                <!-- KPU Scheduler -->
-                <div class="shadow-xl flex flex-col">
-                    <img src="assets/images/project-kpuscheduler.PNG" alt="pixl sketch project" width="700" height="405"
-                        loading="lazy" class="rounded-t-lg aspect-video">
-                    <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
-                        <div class="flex-1">
-                            <h2 class="font-extrabold text-3xl">KPU Scheduler</h2>
-                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                            <p>For our capstone project, my team and I developed a web application for the IT department
-                                head at KPU to streamline semester schedule creation. Our product automates various
-                                steps, significantly speeding up the process while performing conflict checks to
-                                eliminate errors—a major improvement over the school's legacy system. I was responsible
-                                for building the backend, which involved routing with Express.js, implementing
-                                authentication with cookies and JWT, and managing the database connection and queries
-                                using Pocketbase. I was also in charge of the front-end where I implemented numerous
-                                CRUD operations, and ensured the UI was intuitive and interactive by utilizing JS and
-                                Bootstrap.
-                            </p>
-                        </div>
-                        <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                            <div class="mb-5 sm:mb-0">
-                                <span class="projects-tool-used">JS</span>
-                                <span class="projects-tool-used">Express</span>
-                                <span class="projects-tool-used">Pocketbase</span>
-                                <span class="projects-tool-used">Bootstrap</span>
-                            </div>
-                            <div>
-                                <a href="https://github.com/ivanprovci/KPU-Scheduler" target="_blank">GitHub
-                                    <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                        fill-rule="evenodd" clip-rule="evenodd">
-                                        <path
-                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- pixl sketch -->
-                <div class="shadow-xl flex flex-col">
-                    <img src="assets/images/project-pixl-sketch.PNG" alt="pixl sketch project" width="700" height="405"
-                        loading="lazy" class="rounded-t-lg">
-                    <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
-                        <div class="flex-1">
-                            <h2 class="font-extrabold text-3xl">Pixl Sketch</h2>
-                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                            <p>Pixl sketch is a drawing web app made with JavaScript and CSS as a submission for
-                                <a class="underline"
-                                    href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"
-                                    target="_blank">The Odin
-                                    Project</a>.
-                                This solo project was meant to practice dynamic JavaScript and DOM manipulation. The
-                                basic features include drawing, erasing, colour selecting, and resetting the grid to
-                                default. The fancier tools include pixel shading, pixel tinting, and a rainbow gradient
-                                pen!
-                            </p>
-                        </div>
-                        <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                            <div class="mb-5 sm:mb-0">
-                                <span class="projects-tool-used">JavaScript</span>
-                                <span class="projects-tool-used">CSS</span>
-                            </div>
-                            <div>
-                                <a class="border p-1 mr-3 border-red-600 text-red-600"
-                                    href="https://ivanprovci.github.io/pixl-sketch/" target="_blank">LIVE
-                                    DEMO</a>
-                                <a href="https://github.com/ivanprovci/pixl-sketch" target="_blank">GitHub
-                                    <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                        fill-rule="evenodd" clip-rule="evenodd">
-                                        <path
-                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- obsidian -->
-                <div class="shadow-xl flex flex-col">
-                    <img src="assets/images/project-obsidian.PNG" alt="obsidian project" width="700" height="349"
-                        loading="lazy" class="rounded-t-lg aspect-video">
-                    <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
-                        <div class="flex-1">
-                            <h2 class="font-extrabold text-3xl">Obsidian</h2>
-                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                            <p>Obsidian is a full-stack ecommerce web application that supports account registration,
-                                catalog filters, shopping cart functionality, and an account-based favourites section.
-                                The backend is built with PHP, and the front-end utilized Bootstrap for several
-                                components, and CSS for everything else. Account credentials were hashed and stored in a
-                                MySQL database, and can even be edited using the edit profile dropdown menu.
-                                The whole application is hosted using XAMPP's Apache and MySQL servers,
-                                which can be set up quickly by following the instructions in the README of the
-                                repository.
-                            </p>
-                        </div>
-                        <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                            <div class="mb-5 sm:mb-0">
-                                <span class="projects-tool-used">PHP</span>
-                                <span class="projects-tool-used">MySQL</span>
-                                <span class="projects-tool-used">Bootstrap</span>
-                            </div>
-                            <a href="https://github.com/ivanprovci/Obsidian-Ecomm" target="_blank">GitHub
-                                <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                    fill-rule="evenodd" clip-rule="evenodd">
-                                    <path
-                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- medical clinic  -->
-                <div class="shadow-xl flex flex-col">
-                    <img src="assets/images/project-medical-clinic.PNG" alt="medical clinic project" width="700"
-                        loading="lazy" height="316" class="rounded-t-lg aspect-video">
-                    <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
-                        <div class="flex-1">
-                            <h2 class="font-extrabold text-3xl">BC Health & Wellness</h2>
-                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                            <p>BC Health & Wellness is a feature-rich medical clinic system built with a team of 5 for a
-                                'System Development Project' course. It supports patient, doctor, and staff accounts,
-                                each with their own account privileges. Patients can view their medical records,
-                                prescriptions, and lab exam results. Doctors can create new records, and the staff
-                                manage and approve accounts, without having access to confidential documents. I
-                                integrated the Spring Boot backend with the front-end by creating RESTful JavaScript API
-                                calls to our MySQL database. I plan on refactoring this project with Tailwind to polish
-                                up the mistakes we made back then.
-                            </p>
-                        </div>
-                        <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                            <div class="mb-5 sm:mb-0">
-                                <span class="projects-tool-used">JavaScript</span>
-                                <span class="projects-tool-used">MySQL</span>
-                                <span class="projects-tool-used">Java</span>
-                                <span class="projects-tool-used">CSS</span>
-                            </div>
-                            <a href="https://github.com/ivanprovci/medical-clinic-system" target="_blank">GitHub
-                                <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                    fill-rule="evenodd" clip-rule="evenodd">
-                                    <path
-                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- portfolio  -->
-                <div class="shadow-xl flex flex-col">
-                    <img src="assets/images/project-portfolio.PNG" alt="portfolio project" width="700" height="386"
-                        loading="lazy" class="rounded-t-lg">
-                    <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
-                        <div class="flex-1">
-                            <h2 class="font-extrabold text-3xl">Portfolio</h2>
-                            <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                            <p>This porfolio project deserves to be on my portfolio! It's the first project where I
-                                truly spent a lot of time on the design process. It's also my first Tailwind project
-                                and, I have to admit, I'm a big fan. I had fun experimenting with a utility class based
-                                approach and learned a lot in the process. This website is fully responsive on all
-                                devices. Images have also been optimized for faster load times. </p>
-                        </div>
-                        <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                            <div class="mb-5 sm:mb-0">
-                                <span class="projects-tool-used">Tailwind</span>
-                                <span class="projects-tool-used">Figma</span>
-                            </div>
-                            <a href="https://github.com/ivanprovci/portfolio" target="_blank">GitHub
-                                <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                                    fill-rule="evenodd" clip-rule="evenodd">
-                                    <path
-                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <!-- pixl sketch -->
+            <div class="shadow-xl flex flex-col">
+               <img src="assets/images/project-pixl-sketch.PNG" alt="pixl sketch project" width="700" height="405"
+                  loading="lazy" class="rounded-t-lg">
+               <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                  <div class="flex-1">
+                     <h2 class="font-extrabold text-3xl">Pixl Sketch</h2>
+                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                     <p>Pixl sketch is a drawing web app made with JavaScript and CSS as a submission for
+                        <a class="underline" href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"
+                           target="_blank">The Odin
+                           Project</a>.
+                        This solo project was meant to practice dynamic JavaScript and DOM manipulation. The
+                        basic features include drawing, erasing, colour selecting, and resetting the grid to
+                        default. The fancier tools include pixel shading, pixel tinting, and a rainbow gradient
+                        pen!
+                     </p>
+                  </div>
+                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                     <div class="mb-5 sm:mb-0">
+                        <span class="projects-tool-used">JavaScript</span>
+                        <span class="projects-tool-used">CSS</span>
+                     </div>
+                     <div>
+                        <a class="border p-1 mr-3 border-red-600 text-red-600"
+                           href="https://ivanprovci.github.io/pixl-sketch/" target="_blank">LIVE
+                           DEMO</a>
+                        <a href="https://github.com/ivanprovci/pixl-sketch" target="_blank">GitHub
+                           <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                              fill-rule="evenodd" clip-rule="evenodd">
+                              <path
+                                 d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="min-h-screen bg-primary relative flex justify-center">
-        <div class="container w-full px-10 my-[100px] relative z-10">
-            <h1 class="text-5xl pb-8 font-bold">Contact</h1>
-            <div
-                class="w-full p-6 sm:p-12 bg-neutral-400 bg-opacity-10 backdrop-blur-[8px] rounded-xl border border-neutral-700">
-                <h1 class="text-4xl md:text-5xl lg:text-7xl mb-12">Let's 'Connect' &mdash;</h1>
-                <div class="text-base sm:text-xl lg:text-2xl mb-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
-                        <path
-                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                    </svg>
-                    <a href="mailto:ivanprovci@yahoo.com" class="sm:mr-5 hover:underline"
-                        target="_blank">ivanprovci@yahoo.com</a>
-
-                    <button id="btn-copy-email" class="hidden sm:inline-block group bg-neutral-800 border-neutral-600 hover:bg-neutral-700 p-4 rounded-lg border 
-                        relative tooltip transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="max-h-10" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+            <!-- obsidian -->
+            <div class="shadow-xl flex flex-col">
+               <img src="assets/images/project-obsidian.PNG" alt="obsidian project" width="700" height="349"
+                  loading="lazy" class="rounded-t-lg aspect-video">
+               <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                  <div class="flex-1">
+                     <h2 class="font-extrabold text-3xl">Obsidian</h2>
+                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                     <p>Obsidian is a full-stack ecommerce web application that supports account registration,
+                        catalog filters, shopping cart functionality, and an account-based favourites section.
+                        The backend is built with PHP, and the front-end utilized Bootstrap for several
+                        components, and CSS for everything else. Account credentials were hashed and stored in a
+                        MySQL database, and can even be edited using the edit profile dropdown menu.
+                        The whole application is hosted using XAMPP's Apache and MySQL servers,
+                        which can be set up quickly by following the instructions in the README of the
+                        repository.
+                     </p>
+                  </div>
+                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                     <div class="mb-5 sm:mb-0">
+                        <span class="projects-tool-used">PHP</span>
+                        <span class="projects-tool-used">MySQL</span>
+                        <span class="projects-tool-used">Bootstrap</span>
+                     </div>
+                     <a href="https://github.com/ivanprovci/Obsidian-Ecomm" target="_blank">GitHub
+                        <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                           fill-rule="evenodd" clip-rule="evenodd">
+                           <path
+                              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
                         </svg>
-                        <span
-                            class="invisible group-hover:visible absolute text-base text-center px-2 py-1 rounded-md text-white bg-neutral-600 -top-11 -left-1">Copy</span>
-                    </button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- medical clinic  -->
+            <div class="shadow-xl flex flex-col">
+               <img src="assets/images/project-medical-clinic.PNG" alt="medical clinic project" width="700"
+                  loading="lazy" height="316" class="rounded-t-lg aspect-video">
+               <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                  <div class="flex-1">
+                     <h2 class="font-extrabold text-3xl">BC Health & Wellness</h2>
+                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                     <p>BC Health & Wellness is a feature-rich medical clinic system built with a team of 5 for a
+                        'System Development Project' course. It supports patient, doctor, and staff accounts,
+                        each with their own account privileges. Patients can view their medical records,
+                        prescriptions, and lab exam results. Doctors can create new records, and the staff
+                        manage and approve accounts, without having access to confidential documents. I
+                        integrated the Spring Boot backend with the front-end by creating RESTful JavaScript API
+                        calls to our MySQL database. I plan on refactoring this project with Tailwind to polish
+                        up the mistakes we made back then.
+                     </p>
+                  </div>
+                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                     <div class="mb-5 sm:mb-0">
+                        <span class="projects-tool-used">JavaScript</span>
+                        <span class="projects-tool-used">MySQL</span>
+                        <span class="projects-tool-used">Java</span>
+                        <span class="projects-tool-used">CSS</span>
+                     </div>
+                     <a href="https://github.com/ivanprovci/medical-clinic-system" target="_blank">GitHub
+                        <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                           fill-rule="evenodd" clip-rule="evenodd">
+                           <path
+                              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- portfolio  -->
+            <div class="shadow-xl flex flex-col">
+               <img src="assets/images/project-portfolio.PNG" alt="portfolio project" width="700" height="386"
+                  loading="lazy" class="rounded-t-lg">
+               <div class="p-6 sm:p-9 bg-white rounded-b-lg text-black flex-1 flex flex-col">
+                  <div class="flex-1">
+                     <h2 class="font-extrabold text-3xl">Portfolio</h2>
+                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                     <p>This porfolio project deserves to be on my portfolio! It's the first project where I
+                        truly spent a lot of time on the design process. It's also my first Tailwind project
+                        and, I have to admit, I'm a big fan. I had fun experimenting with a utility class based
+                        approach and learned a lot in the process. This website is fully responsive on all
+                        devices. Images have also been optimized for faster load times. </p>
+                  </div>
+                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                     <div class="mb-5 sm:mb-0">
+                        <span class="projects-tool-used">Tailwind</span>
+                        <span class="projects-tool-used">Figma</span>
+                     </div>
+                     <a href="https://github.com/ivanprovci/portfolio" target="_blank">GitHub
+                        <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                           fill-rule="evenodd" clip-rule="evenodd">
+                           <path
+                              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
-                </div>
-                <div class="text-base sm:text-xl lg:text-2xl mb-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                    </svg>
-                    <a href="https://github.com/ivanprovci" target="_blank"
-                        class="hover:underline">github.com/ivanprovci</a>
-                </div>
-                <div class="text-base sm:text-xl lg:text-2xl mb-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                        class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                    </svg>
-                    <a href="https://www.linkedin.com/in/ivanprovci/" target="_blank"
-                        class="hover:underline">linkedin/in/ivanprovci</a>
-                </div>
+   <section id="contact" class="min-h-screen bg-primary relative flex justify-center">
+      <div class="container w-full px-10 my-[100px] relative z-10">
+         <h1 class="text-5xl pb-8 font-bold">Contact</h1>
+         <div
+            class="w-full p-6 sm:p-12 bg-neutral-400 bg-opacity-10 backdrop-blur-[8px] rounded-xl border border-neutral-700">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl mb-12">Let's 'Connect' &mdash;</h1>
+            <div class="text-base sm:text-xl lg:text-2xl mb-7">
+               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                  class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                  <path
+                     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+               </svg>
+               <a href="mailto:ivanprovci@yahoo.com" class="sm:mr-5 hover:underline"
+                  target="_blank">ivanprovci@yahoo.com</a>
+
+               <button id="btn-copy-email" class="hidden sm:inline-block group bg-neutral-800 border-neutral-600 hover:bg-neutral-700 p-4 rounded-lg border 
+                        relative tooltip transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="max-h-10"
+                     viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                  </svg>
+                  <span
+                     class="invisible group-hover:visible absolute text-base text-center px-2 py-1 rounded-md text-white bg-neutral-600 -top-11 -left-1">Copy</span>
+               </button>
 
             </div>
-        </div>
-    </section>
+            <div class="text-base sm:text-xl lg:text-2xl mb-7">
+               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                  class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                  <path
+                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+               </svg>
+               <a href="https://github.com/ivanprovci" target="_blank" class="hover:underline">github.com/ivanprovci</a>
+            </div>
+            <div class="text-base sm:text-xl lg:text-2xl mb-7">
+               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                  class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                  <path
+                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+               </svg>
+               <a href="https://www.linkedin.com/in/ivanprovci/" target="_blank"
+                  class="hover:underline">linkedin/in/ivanprovci</a>
+            </div>
 
-    <script src="assets/script.js" type="module"></script>
+         </div>
+      </div>
+   </section>
+
+   <script src="assets/script.js" type="module"></script>
 </body>
 
 </html>
