@@ -11,8 +11,20 @@
 	}
 
 	.projects-tool-used {
-		@apply border border-black rounded-full py-1 px-2 text-[10px] sm:text-xs
-        hover:bg-black hover:text-white hover:transition;
+		@apply border border-stone-300 rounded-full py-1 px-2 text-[10px] sm:text-xs
+        hover:bg-white hover:text-black hover:transition;
+	}
+
+	.card {
+		@apply shadow-xl flex flex-col gap-6 xl:gap-14 xl:flex-row text-stone-300 text-base leading-relaxed bg-slate-800 bg-opacity-20 border border-white border-opacity-30 rounded-xl p-6 md:p-14;
+	}
+
+	.card > img {
+		@apply rounded-xl xl:w-1/2 mx-auto mb-auto;
+	}
+
+	.card > div {
+		@apply bg-opacity-20 xl:w-1/2 flex-1 flex flex-col;
 	}
 }
 
@@ -22,7 +34,7 @@
 	--btn-bg-2: #f8b500;
 	--btn-bg-color: #4b3900;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 0.5s;
 	background-size: 280% auto;
 	background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
 	border: none;
