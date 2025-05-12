@@ -8,10 +8,11 @@
    <title>Ivan's Portfolio</title>
    <link rel="stylesheet" href="styles.css">
    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="font-inter text-white">
-   <nav class="hidden sm:block shadow-xl fixed w-full bg-primary z-50">
+   <nav class="hidden sm:block shadow-xl fixed w-full bg-primary z-40">
       <div class="flex justify-between px-10 py-5 max-w-screen-2xl mx-auto">
          <p class="font-medium text-xl md:text-2xl">&lt;Ivan &#47;&gt;</p>
          <div class="flex sm:gap-5 md:gap-12">
@@ -30,10 +31,10 @@
          <div>
             <h1
                class="w-full text-7xl sm:text-9xl md:text-[170px] lg:text-[220px] px-7 text-center tracking-tight leading-tight font-medium">
-               I'm Ivan.
+               I'm <span data-aos="fade-in" data-aos-duration="3000" data-aos-delay="300">Ivan.</span>
             </h1>
             <p class="text-center text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider">
-               Web Developer and Student at KPU
+               Web Developer ready to bring ideas to life
             </p>
             <div class="flex justify-center gap-3 md:gap-10 mt-10 sm:mt-16">
                <a class="ml-10" href="assets/documents/resume.pdf" download>
@@ -85,72 +86,81 @@
          <div class="mb-12 text-stone-300 text-lg">
             <h2 class="tracking-wider mb-5 text-xl">SKILLS</h2>
             <div class="flex flex-wrap justify-center gap-3 sm:gap-7">
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-react.png" alt="react icon" loading="lazy" width="120" height="104"
+                     <img src="assets/images/logo/react.png" alt="react icon" loading="lazy" width="120" height="104"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
-                  <h3 class="text-center">ReactJS</h3>
+                  <h3 class="text-center">React</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="50">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-js.png" alt="javascript icon" loading="lazy" width="120" height="120"
+                     <img src="assets/images/logo/ts.png" alt="typescript icon" loading="lazy" width="120" height="120"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
-                  <h3 class="text-center">JavaScript</h3>
+                  <h3 class="text-center">TypeScript</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="100">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-tailwind.png" alt="tailwind icon" loading="lazy" width="120"
+                     <img src="assets/images/logo/nextjs.png" alt="nextjs icon" loading="lazy" width="120" height="135"
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                  </div>
+                  <h3 class="text-center">NextJS</h3>
+               </div>
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="150">
+                  <div class="min-h-[130px] flex flex-col justify-evenly">
+                     <img src="assets/images/logo/tailwind.png" alt="tailwind icon" loading="lazy" width="120"
                         height="73" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">Tailwind</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="200">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-bootstrap.png" alt="bootstrap icon" loading="lazy" width="120"
+                     <img src="assets/images/logo/bootstrap.png" alt="bootstrap icon" loading="lazy" width="120"
                         height="96" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">Bootstrap</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="250">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-java.png" alt="java icon" loading="lazy" width="120" height="120"
+                     <img src="assets/images/logo/java.png" alt="java icon" loading="lazy" width="120" height="120"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">Java</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="300">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-php.png" alt="php icon" loading="lazy" width="120" height="65"
+                     <img src="assets/images/logo/php.png" alt="php icon" loading="lazy" width="120" height="65"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">PHP</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="350">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-cpp.png" alt="c++ icon" loading="lazy" width="120" height="135"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
-                  </div>
-                  <h3 class="text-center">C++</h3>
-               </div>
-               <div class="flex flex-col content-center">
-                  <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-mysql.png" alt="mysql icon" loading="lazy" width="120" height="120"
+                     <img src="assets/images/logo/mysql.png" alt="mysql icon" loading="lazy" width="120" height="120"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">MySQL</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="400">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-git.png" alt="git icon" loading="lazy" width="120" height="120"
+                     <img src="assets/images/logo/git.png" alt="git icon" loading="lazy" width="120" height="120"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">Git</h3>
                </div>
-               <div class="flex flex-col content-center">
+               <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="450">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
-                     <img src="assets/images/logo-figma.png" alt="figma icon" loading="lazy" width="120" height="120"
+                     <img src="assets/images/logo/figma.png" alt="figma icon" loading="lazy" width="120" height="120"
                         class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
                   </div>
                   <h3 class="text-center">Figma</h3>
@@ -158,27 +168,14 @@
             </div>
          </div>
 
-         <div class="text-stone-300 text-lg">
-            <h2 class="tracking-wider mb-5 text-xl">RANDOM FACTS</h2>
-            <ul class="list-disc list-inside">
-               <li class="text-sm sm:text-lg">I grew up in a little town called Novo Orahovo in Serbia</li>
-               <li class="text-sm sm:text-lg">I moved to Canada when I was 11 years old</li>
-               <li class="text-sm sm:text-lg">I am quadrilingual (speak 4 languages &mdash; Serbian, Hungarian,
-                  Ruthenian,
-                  English)</li>
-               <li class="text-sm sm:text-lg">I love powerlifting & bodybuilding</li>
-               <li class="text-sm sm:text-lg">My favourite video games are Counter Strike and Valorant</li>
-               <li class="text-sm sm:text-lg">I'm a big Post Malone fan</li>
-               <li class="text-sm sm:text-lg">I love oldschool 90s Hip-Hop/Rap</li>
-               <li class="text-sm sm:text-lg">I have 2 cats: Tubby the tabby and Lily the tuxedo</li>
-            </ul>
-         </div>
+
+
 
       </div>
    </section>
 
    <section id="projects" class="flex justify-center bg-primary pb-16 relative">
-
+      <!-- projects section background blob -->
       <svg class="hidden lg:block absolute inset-0 w-full h-full opacity-40" width="1440" height="1263"
          viewBox="0 0 1440 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
          <g filter="url(#filter0_f_94_3)">
@@ -207,33 +204,141 @@
          <h1 class="text-5xl pb-8 font-bold">Projects</h1>
          <div class="flex flex-col text-xs sm:text-lg gap-32">
             <!-- KPU Scheduler -->
-            <div class="card">
-               <img src="assets/images/project-kpuscheduler.PNG" alt="scheduler project" width="700" height="405"
-                  loading="lazy">
+            <div class="card" data-aos="fade-right">
                <div>
-                  <div class="flex-1">
-                     <h2 class="font-extrabold text-3xl">KPU Scheduler</h2>
-                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                     <p>For our capstone project, my team and I developed a web application for the IT department
-                        head at KPU to streamline semester schedule creation. Our product automates various
-                        steps, significantly speeding up the process while performing conflict checks to
-                        eliminate errors—a major improvement over the school's legacy system. I was responsible
-                        for building the backend, which involved routing with Express.js, implementing
-                        authentication with cookies and JWT, and managing the database connection and queries
-                        using Pocketbase. I was also in charge of the front-end where I implemented numerous
-                        CRUD operations, and ensured the UI was intuitive and interactive by utilizing JS and
-                        Bootstrap.
-                     </p>
-                  </div>
-                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                     <div class="mb-5 sm:mb-0">
-                        <span class="projects-tool-used">JS</span>
-                        <span class="projects-tool-used">Express</span>
-                        <span class="projects-tool-used">Pocketbase</span>
-                        <span class="projects-tool-used">Bootstrap</span>
+                  <h2 class="font-extrabold text-3xl">KPU Scheduler</h2>
+                  <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                  <p>For our capstone project, my team and I developed a web app for the IT department
+                     head at KPU to streamline semester schedule management. Our product is far more efficient at
+                     managing class schedules for new semesters compared to the school's legacy system: manual entries
+                     via spreadsheets. This was achieved by
+                     providing an elegant user interface, autofilling inputs, and most importantly: checking
+                     time conflicts with existing classes.
+                  </p>
+               </div>
+               <div class="flex flex-col xl:flex-row-reverse gap-6 xl:gap-14">
+                  <img src="assets/images/project/thumb/kpuscheduler.PNG" alt="project image" width="600" height="405"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
+                     <div class="flex-1">
+                        <ul class="list-disc pl-5">
+                           <li>Created route handlers with ExpressJS to process data, return
+                              meaningful HTTP status codes, and provide error handling with informative messages</li>
+                           <li>Built middleware that handled authentication and authorization</li>
+                           <li>Used Pocketbase to create JWT tokens and verify incoming ones from the client's cookies
+                           </li>
+                           <li>Developed CRUD endpoints for the 'semesters' and 'timetable' page, and utilized bootstrap
+                              for styling</li>
+                           <li>Lead a team of 5 by delegating work and having weekly progress check-ins to ensure
+                              everyone was up to date on the project</li>
+                           <li>Followed good UX principles while working on the frontend by giving feedback to the user
+                              on their actions (CRUD operations and errors)</li>
+                           <li>Pocketbase setup, data management, and custom database API routes</li>
+                           <li>Conditional nav bar rendering based on login state</li>
+                           <li>Custom 401 and 404 pages</li>
+                        </ul>
                      </div>
-                     <div>
-                        <a href="https://github.com/ivanprovci/KPU-Scheduler" target="_blank">GitHub
+                     <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                        <div class="mb-5 sm:mb-0">
+                           <span class="projects-tool-used">JS</span>
+                           <span class="projects-tool-used">Express</span>
+                           <span class="projects-tool-used">Pocketbase</span>
+                           <span class="projects-tool-used">Bootstrap</span>
+                        </div>
+                        <div>
+                           <a href="https://github.com/ivanprovci/KPU-Scheduler" target="_blank">GitHub
+                              <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                 fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+                                 <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- sports engine -->
+            <div class="card" data-aos="fade-left">
+               <div>
+                  <h2 class="font-extrabold text-3xl">Sports Search Engine</h2>
+                  <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                  <p>Sports Search Engine is a group project I worked on (alongside 4 others) for our SEO class at KPU.
+                     It supports querying and indexing for 3 different media types:
+                     text, images, and video. We used Flask to run our server, and Whoosh for all our indexing and
+                     querying needs. BeautifulSoup was used sparingly to scrape the NHL, NBA, NFL, and theScore websites
+                     for data, which was stored in an SQLite database. Overall it was a very practical project because
+                     we applied everything we learned from 3 months of lectures.
+                  </p>
+               </div>
+               <div class="flex flex-col xl:flex-row gap-6 xl:gap-14">
+                  <img src="assets/images/project/thumb/sports-engine.png" alt="project image" width="700" height="405"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
+                     <div class="flex-1">
+                        <ul class="list-disc pl-5">
+                           <li>Scraped the NBA website for articles and images and stored them in our SQLite
+                              database. Data included titles, description, and other content that the indexer would
+                              consider when queried</li>
+                           <li>Set up the indexing and querying functionality using Whoosh</li>
+                           <li>Implemented all of the front-end logic and design
+                           <li>Handled requests/responses to/from our server including query requests, result responses,
+                              and image fetching</li>
+                           <li>Enabled 'Enter' key to submit queries for better UX</li>
+                        </ul>
+                     </div>
+                     <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                        <div class="mb-5 sm:mb-0">
+                           <span class="projects-tool-used">Python</span>
+                           <span class="projects-tool-used">SQLite</span>
+                           <span class="projects-tool-used">JavaScript</span>
+                        </div>
+                        <div>
+                           <a href="https://github.com/bane2013/sports-engine-main" target="_blank">GitHub
+                              <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                 fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+                                 <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- portfolio  -->
+            <div class="card" data-aos="fade-right">
+               <div>
+                  <h2 class="font-extrabold text-3xl">Portfolio</h2>
+                  <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                  <p>My portfolio is the first project where I
+                     truly spent <span class="underline">a lot</span> of time on the design process. It's also my first
+                     Tailwind project
+                     and I have to admit, I'm a big fan. I had fun building a website with a utility class based
+                     approach, and learned about what makes Tailwind powerful: its flexibility and reusability.</p>
+               </div>
+               <div class="flex flex-col xl:flex-row-reverse gap-6 xl:gap-14">
+                  <img src="assets/images/project/thumb/portfolio.PNG" alt="project image" width="700" height="386"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
+                     <div class="flex-1">
+                        <ul class="list-disc pl-5">
+                           <li>Designed with Figma & built with Tailwind</li>
+                           <li>Fully responsive on all devices</li>
+                           <li>Lighthouse score of 100</li>
+                           <li>Image sizes were optimized to send the smallest file size possible while retaining the
+                              best image quality</li>
+                           <li>Fonts are locally hosted with multiple file types (.woff2, .woff) for better browser
+                              compatibility</li>
+                           <li>Animations done with AOS</li>
+                        </ul>
+                     </div>
+                     <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                        <div class="mb-5 sm:mb-0">
+                           <span class="projects-tool-used">Tailwind</span>
+                           <span class="projects-tool-used">Figma</span>
+                        </div>
+                        <a href="https://github.com/ivanprovci/portfolio" target="_blank">GitHub
                            <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
                               fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
                               <path
@@ -245,33 +350,87 @@
                </div>
             </div>
             <!-- pixl sketch -->
-            <div class="card xl:flex-row-reverse">
-               <img src="assets/images/project-pixl-sketch.PNG" alt="pixl sketch project" width="700" height="405"
-                  loading="lazy">
+            <div class="card" data-aos="fade-left">
                <div>
-                  <div class="flex-1">
-                     <h2 class="font-extrabold text-3xl">Pixl Sketch</h2>
-                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                     <p>Pixl sketch is a drawing web app made with JavaScript and CSS as a submission for
-                        <a class="underline" href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"
-                           target="_blank">The Odin
-                           Project</a>.
-                        This solo project was meant to practice dynamic JavaScript and DOM manipulation. The
-                        basic features include drawing, erasing, colour selecting, and resetting the grid to
-                        default. The fancier tools include pixel shading, pixel tinting, and a rainbow gradient
-                        pen!
-                     </p>
-                  </div>
-                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                     <div class="mb-5 sm:mb-0">
-                        <span class="projects-tool-used">JavaScript</span>
-                        <span class="projects-tool-used">CSS</span>
+                  <h2 class="font-extrabold text-3xl">Pixl Sketch</h2>
+                  <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                  <p>Pixl sketch is an interactive drawing web app built using JavaScript and CSS, created as a
+                     submission for
+                     <a class="underline" href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch"
+                        target="_blank">The Odin
+                        Project</a>.
+                     This solo project aimed to strengthen my skills in dynamic DOM
+                     manipulation, events, and JavaScript as a whole.
+                  </p>
+               </div>
+               <div class="flex flex-col xl:flex-row gap-6 xl:gap-14">
+                  <img src="assets/images/project/thumb/pixl-sketch.PNG" alt="project image" width="700" height="405"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
+                     <div class="flex-1">
+                        <ul class="list-disc pl-5">
+                           <li>16x16 grid of pixels that support drawing, erasing, shading, toning, and rainbow mode
+                           </li>
+                           <li>Color picker, eyedropper tool, and reset button</li>
+                           <li>Added state management for all buttons</li>
+                           <li>Optimized event listeners with event delegation and handled various bugs</li>
+                           <li>Converted colors between different color models (HSL, Hex, RGB)</li>
+                        </ul>
                      </div>
-                     <div>
-                        <a class="p-1 mr-3 border border-red-900 bg-red-600 text-white"
-                           href="https://ivanprovci.github.io/pixl-sketch/" target="_blank">LIVE
-                           DEMO</a>
-                        <a href="https://github.com/ivanprovci/pixl-sketch" target="_blank">GitHub
+                     <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                        <div class="mb-5 sm:mb-0">
+                           <span class="projects-tool-used">JavaScript</span>
+                           <span class="projects-tool-used">CSS</span>
+                        </div>
+                        <div>
+                           <a class="p-1 mr-3 border border-red-900 bg-red-600 text-white"
+                              href="https://ivanprovci.github.io/pixl-sketch/" target="_blank">LIVE
+                              DEMO</a>
+                           <a href="https://github.com/ivanprovci/pixl-sketch" target="_blank">GitHub
+                              <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                 fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+                                 <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                              </svg>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- obsidian -->
+            <div class="card" data-aos="fade-right">
+               <div>
+                  <h2 class="font-extrabold text-3xl">Obsidian</h2>
+                  <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
+                  <p>Obsidian is a full-stack ecommerce web application built by myself and one other teammate. The
+                     website supports account registration,
+                     catalog filters, shopping cart functionality, and an account-based favourites section.
+                     The backend is built with PHP, and the front-end utilized a mix of Bootstrap for several
+                     components, and CSS for everything else.
+                  </p>
+               </div>
+               <div class="flex flex-col xl:flex-row-reverse gap-6 xl:gap-14">
+                  <img src="assets/images/project/thumb/obsidian.PNG" alt="project image" width="700" height="349"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
+                     <div class="flex-1">
+                        <ul class="list-disc pl-5">
+                           <li>PHP backend and MySQL database</li>
+                           <li>Bootstrap and CSS used for component styling</li>
+                           <li>Account-based favourites and shopping carts</li>
+                           <li>Session-based auth</li>
+                           <li>Credentials are hashed and can be edited in the edit profile menu</li>
+                           <li>Catalog browsing with filtering options</li>
+                        </ul>
+                     </div>
+                     <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
+                        <div class="mb-5 sm:mb-0">
+                           <span class="projects-tool-used">PHP</span>
+                           <span class="projects-tool-used">MySQL</span>
+                           <span class="projects-tool-used">Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/ivanprovci/Obsidian-Ecomm" target="_blank">GitHub
                            <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
                               fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
                               <path
@@ -279,104 +438,6 @@
                            </svg>
                         </a>
                      </div>
-                  </div>
-               </div>
-            </div>
-            <!-- obsidian -->
-            <div class="card">
-               <img src="assets/images/project-obsidian.PNG" alt="obsidian project" width="700" height="349"
-                  loading="lazy" class="rounded-t-lg aspect-video">
-               <div>
-                  <div class="flex-1">
-                     <h2 class="font-extrabold text-3xl">Obsidian</h2>
-                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                     <p>Obsidian is a full-stack ecommerce web application that supports account registration,
-                        catalog filters, shopping cart functionality, and an account-based favourites section.
-                        The backend is built with PHP, and the front-end utilized Bootstrap for several
-                        components, and CSS for everything else. Account credentials were hashed and stored in a
-                        MySQL database, and can even be edited using the edit profile dropdown menu.
-                        The whole application is hosted using XAMPP's Apache and MySQL servers,
-                        which can be set up quickly by following the instructions in the README of the
-                        repository.
-                     </p>
-                  </div>
-                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                     <div class="mb-5 sm:mb-0">
-                        <span class="projects-tool-used">PHP</span>
-                        <span class="projects-tool-used">MySQL</span>
-                        <span class="projects-tool-used">Bootstrap</span>
-                     </div>
-                     <a href="https://github.com/ivanprovci/Obsidian-Ecomm" target="_blank">GitHub
-                        <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                           fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
-                           <path
-                              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                        </svg>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <!-- medical clinic  -->
-            <div class="card xl:flex-row-reverse">
-               <img src="assets/images/project-medical-clinic.PNG" alt="medical clinic project" width="700"
-                  loading="lazy" height="316" class="rounded-t-lg aspect-video">
-               <div>
-                  <div class="flex-1">
-                     <h2 class="font-extrabold text-3xl">BC Health & Wellness</h2>
-                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                     <p>BC Health & Wellness is a feature-rich medical clinic system built with a team of 5 for a
-                        'System Development Project' course. It supports patient, doctor, and staff accounts,
-                        each with their own account privileges. Patients can view their medical records,
-                        prescriptions, and lab exam results. Doctors can create new records, and the staff
-                        manage and approve accounts, without having access to confidential documents. I
-                        integrated the Spring Boot backend with the front-end by creating RESTful JavaScript API
-                        calls to our MySQL database. I plan on refactoring this project with Tailwind to polish
-                        up the mistakes we made back then.
-                     </p>
-                  </div>
-                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                     <div class="mb-5 sm:mb-0">
-                        <span class="projects-tool-used">JavaScript</span>
-                        <span class="projects-tool-used">MySQL</span>
-                        <span class="projects-tool-used">Java</span>
-                        <span class="projects-tool-used">CSS</span>
-                     </div>
-                     <a href="https://github.com/ivanprovci/medical-clinic-system" target="_blank">GitHub
-                        <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                           fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
-                           <path
-                              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                        </svg>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <!-- portfolio  -->
-            <div class="card">
-               <img src="assets/images/project-portfolio.PNG" alt="portfolio project" width="700" height="386"
-                  loading="lazy">
-               <div>
-                  <div class="flex-1">
-                     <h2 class="font-extrabold text-3xl">Portfolio</h2>
-                     <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
-                     <p>This portfolio project deserves to be on my portfolio! It's the first project where I
-                        truly spent a lot of time on the design process. It's also my first Tailwind project
-                        and, I have to admit, I'm a big fan. I had fun experimenting with a utility class based
-                        approach and learned a lot in the process. This website is fully responsive on all
-                        devices. Images have also been optimized for faster load times. </p>
-                  </div>
-                  <div class="mt-14 flex flex-col sm:flex-row sm:justify-between">
-                     <div class="mb-5 sm:mb-0">
-                        <span class="projects-tool-used">Tailwind</span>
-                        <span class="projects-tool-used">Figma</span>
-                     </div>
-                     <a href="https://github.com/ivanprovci/portfolio" target="_blank">GitHub
-                        <svg class="inline" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
-                           fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
-                           <path
-                              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                        </svg>
-                     </a>
                   </div>
                </div>
             </div>
@@ -433,7 +494,16 @@
       </div>
    </section>
 
+   <!-- picture modal -->
+   <div id="modal" class="hidden fixed z-50 p-[100px] left-0 top-0 w-full h-full bg-black bg-opacity-80">
+      <img id="modalImg" class="max-w-[75%] m-auto block">
+   </div>
+
    <script src="assets/script.js" type="module"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({ once: true });
+   </script>
 </body>
 
 </html>

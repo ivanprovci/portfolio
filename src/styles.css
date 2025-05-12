@@ -16,15 +16,7 @@
 	}
 
 	.card {
-		@apply shadow-xl flex flex-col gap-6 xl:gap-14 xl:flex-row text-stone-300 text-base leading-relaxed bg-slate-800 bg-opacity-20 border border-white border-opacity-30 rounded-xl p-6 md:p-14;
-	}
-
-	.card > img {
-		@apply rounded-xl xl:w-1/2 mx-auto mb-auto;
-	}
-
-	.card > div {
-		@apply bg-opacity-20 xl:w-1/2 flex-1 flex flex-col;
+		@apply shadow-xl flex flex-col gap-6 xl:gap-10  text-stone-300 text-lg leading-relaxed bg-slate-800 bg-opacity-20 border border-white border-opacity-30 rounded-xl p-6 md:p-14;
 	}
 }
 
@@ -100,7 +92,7 @@ canvas {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #000000;
+	background: #0d0c11;
 }
 
 /* Handle */

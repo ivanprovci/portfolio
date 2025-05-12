@@ -14,3 +14,20 @@ btnCopyEmail.addEventListener("click", () => {
 btnCopyEmail.addEventListener("mouseleave", () => {
 	tooltipText.textContent = "Copy"
 })
+
+const modal = document.querySelector("#modal")
+const modalImg = document.querySelector("#modalImg")
+const allProjectImgs = document.querySelectorAll("img[alt='project image']")
+
+allProjectImgs.forEach((projectImg) => {
+	projectImg.addEventListener("click", () => {
+		modal.classList.remove("hidden")
+		modalImg.src = projectImg.src.replace("/images/project/thumb/", "/images/project/full/")
+	})
+})
+
+modal.addEventListener("click", (e) => {
+	if (e.target === modal) {
+		modal.classList.add("hidden")
+	}
+})
