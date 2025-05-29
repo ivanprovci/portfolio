@@ -1,6 +1,6 @@
 # Portfolio
 
-![portfolio hero section](docs/assets/images/project-portfolio.PNG)
+![portfolio hero section](docs/assets/images/project/full/portfolio.png)
 
 Welcome to my portfolio showcase! Have a look at the [LIVE DEMO](https://ivanprovci.github.io/portfolio/) on github pages. 
 
