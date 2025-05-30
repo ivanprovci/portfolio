@@ -31,3 +31,21 @@ modal.addEventListener("click", (e) => {
 		modal.classList.add("hidden")
 	}
 })
+
+const navMobilePopout = document.querySelector("#nav-mobile-popout")
+const btnNavMobile = document.querySelector("#btn-nav-mobile")
+// toggle nav sidebar
+btnNavMobile.addEventListener("click", (e) => {
+	e.stopPropagation()
+	navMobilePopout.classList.toggle("translate-x-full")
+})
+
+document.addEventListener("click", (e) => {
+	const isClickInsideNav = navMobilePopout.contains(e.target)
+	const isClickOnButton = btnNavMobile.contains(e.target)
+	const isNavVisible = !navMobilePopout.classList.contains("translate-x-full")
+
+	if (!isClickInsideNav && !isClickOnButton && isNavVisible) {
+		navMobilePopout.classList.add("translate-x-full")
+	}
+})
