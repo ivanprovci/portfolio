@@ -593,6 +593,8 @@ video {
 .nav-link {
   position: relative;
   display: inline-block;
+  width: -moz-min-content;
+  width: min-content;
   padding-bottom: 0.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -724,10 +726,6 @@ video {
   top: -2.75rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -736,24 +734,12 @@ video {
   right: 3.5rem;
 }
 
-.top-0 {
-  top: 0px;
+.top-14 {
+  top: 3.5rem;
 }
 
 .top-8 {
   top: 2rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
-.top-14 {
-  top: 3.5rem;
 }
 
 .z-10 {
@@ -772,8 +758,9 @@ video {
   z-index: 50;
 }
 
-.m-auto {
-  margin: auto;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-5 {
@@ -784,11 +771,6 @@ video {
 .my-\[100px\] {
   margin-top: 100px;
   margin-bottom: 100px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-10 {
@@ -865,10 +847,6 @@ video {
 
 .mt-\[100px\] {
   margin-top: 100px;
-}
-
-.block {
-  display: block;
 }
 
 .inline-block {
@@ -1018,10 +996,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .overflow-x-hidden {
@@ -1181,10 +1155,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-\[100px\] {
-  padding: 100px;
 }
 
 .px-10 {
@@ -1400,16 +1370,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 /* all low-level classes that you use in .html files */

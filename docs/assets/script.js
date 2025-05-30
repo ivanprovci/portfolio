@@ -33,10 +33,18 @@ modal.addEventListener("click", (e) => {
 })
 
 const navMobilePopout = document.querySelector("#nav-mobile-popout")
+// delegate the 4 nav link events to the navMobilePopout div
+// results in only one eventlistener instead of 4 (one for each link)
+navMobilePopout.addEventListener("click", (e) => {
+	if (e.target.classList.contains("nav-link")) {
+		navMobilePopout.classList.add("translate-x-full")
+	}
+})
+
 const btnNavMobile = document.querySelector("#btn-nav-mobile")
 // toggle nav sidebar
 btnNavMobile.addEventListener("click", (e) => {
-	e.stopPropagation()
+	e.stopPropagation() // so you don't trigger the document event listener below
 	navMobilePopout.classList.toggle("translate-x-full")
 })
 
