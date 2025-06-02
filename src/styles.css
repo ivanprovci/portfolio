@@ -4,7 +4,7 @@
 
 @layer components {
 	.nav-link {
-		@apply w-min text-xl md:text-2xl inline-block relative pb-1
+		@apply w-min text-xl md:text-xl inline-block relative pb-1
         after:absolute after:w-full after:bg-white after:h-[2px] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-left 
         hover:after:scale-x-100 hover:after:origin-bottom-right
         after:transition-all after:duration-[400];
@@ -16,7 +16,7 @@
 	}
 
 	.card {
-		@apply shadow-xl flex flex-col gap-6 xl:gap-10  text-stone-300 text-lg leading-relaxed bg-slate-800 bg-opacity-20 border border-white border-opacity-30 rounded-xl p-6 md:p-14;
+		@apply shadow-xl flex flex-col gap-6 xl:gap-10  text-stone-300 leading-relaxed bg-slate-800 bg-opacity-20 border border-white border-opacity-30 rounded-xl p-6 md:p-10;
 	}
 }
 
@@ -44,6 +44,14 @@ canvas {
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
+}
+
+section {
+   scroll-margin-top: 70px;
+}
+
+section:last-of-type {
+   scroll-margin-top: 0px;
 }
 
 /* regular */

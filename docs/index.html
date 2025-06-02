@@ -13,10 +13,10 @@
 
 <body class="font-inter text-white overflow-x-hidden">
    <nav class="shadow-xl fixed w-full bg-primary z-40">
-      <div class="flex justify-between px-10 py-3.5 sm:py-5 max-w-screen-2xl mx-auto">
-         <p class="font-medium text-xl md:text-2xl">&lt;Ivan &#47;&gt;</p>
+      <div class="flex justify-between px-10 py-3.5 sm:py-3 max-w-screen-xl mx-auto text-xl">
+         <p class="font-medium md:text-xl">&lt;Ivan &#47;&gt;</p>
          <!-- regular nav bar for larger devices -->
-         <div class="hidden sm:flex sm:gap-5 md:gap-12">
+         <div class="hidden sm:flex sm:gap-5 md:gap-10">
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#projects" class="nav-link">Projects</a>
@@ -50,16 +50,16 @@
       <div class="absolute inset-0 flex justify-center items-center mb-[100px]">
          <div>
             <h1
-               class="w-full text-7xl sm:text-9xl md:text-[170px] lg:text-[220px] px-7 text-center tracking-tight leading-tight font-medium">
+               class="w-full  text-8xl sm:text-9xl md:text-[170px] lg:text-[180px] px-7 text-center tracking-tight font-medium">
                I'm <span data-aos="fade-in" data-aos-duration="3000" data-aos-delay="300">Ivan.</span>
             </h1>
-            <p class="text-center text-base sm:text-xl md:text-2xl lg:text-3xl tracking-wider">
+            <p class="text-center text-sm sm:text-xl md:text-2xl lg:text-2xl tracking-wider">
                Web Developer ready to bring ideas to life
             </p>
-            <div class="flex justify-center gap-3 md:gap-10 mt-10 sm:mt-16">
+            <div class="flex justify-center gap-3 md:gap-9 mt-10 sm:mt-16">
                <a class="ml-10" href="assets/documents/resume.pdf" download>
                   <button
-                     class="btn-resume border font-bold rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16">RESUME
+                     class="btn-resume border font-bold rounded-[25px] text-xs sm:text-lg tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-4 sm:px-6 md:px-11 lg:px-16">RESUME
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-download inline" viewBox="0 0 16 16">
                         <path
@@ -71,7 +71,7 @@
                </a>
                <a class="mr-10" href="#contact">
                   <button
-                     class="border font-bold rounded-[30px] text-xs sm:text-xl tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-5 sm:px-7 md:px-11 lg:px-16 hover:scale-105 transition duration-500">CONTACT
+                     class="border font-bold rounded-[25px] text-xs sm:text-lg tracking-[2px] md:tracking-[5px] py-3 px-4 sm:py-4 sm:px-6 md:px-11 lg:px-16 hover:scale-105 transition duration-500">CONTACT
                      ME</button>
                </a>
             </div>
@@ -79,13 +79,13 @@
       </div>
    </section>
 
-   <section id="about" class="min-h-screen bg-primary flex justify-center">
-      <div class="container w-full px-10 mt-[100px]">
-         <h1 class="text-5xl pb-8 font-bold">About</h1>
+   <section id="about" class="bg-primary max-w-screen-xl mx-auto">
+      <div class=" px-7 sm:px-10 mt-[100px] w-full">
+         <h1 class="text-4xl pb-8 font-bold">About</h1>
          <div class="mb-12 flex flex-col-reverse items-center lg:flex-row text-stone-300">
             <div>
-               <h2 class="text-xl tracking-wider mb-5">ABOUT ME</h2>
-               <p class="text-sm sm:text-lg mb-10">I am a full-stack web developer, passionate about creating complete
+               <h2 class="text-lg tracking-wider mb-5">ABOUT ME</h2>
+               <p class="text-sm sm:text-base mb-10">I am a full-stack web developer, passionate about creating complete
                   solutions. I follow industry best practices to build efficient and secure backends, as well as
                   engaging and user-friendly frontends. I’ve been told that I have a good intuition for UI/UX, and I
                   believe my work reflects that. I pay close attention to small details that make a big difference in
@@ -103,17 +103,17 @@
                </p>
             </div>
             <div class="flex flex-col justify-evenly">
-               <img src="assets/images/about-photo.png" alt="picture of ivan" width="350" height="350" loading="lazy"
-                  class="px-10 md:px-0 mb-10 lg:mt-0 lg:ml-[100px] min-w-[350px]">
+               <img src="assets/images/about-photo.png" alt="picture of ivan" width="300" height="300" loading="lazy"
+                  class="px-10 md:px-0 mb-10 lg:mt-0 lg:ml-[100px] min-w-[300px]">
             </div>
          </div>
          <div class="mb-16 text-stone-300 text-lg">
-            <h2 class="tracking-wider mb-5 text-xl">SKILLS</h2>
-            <div class="flex flex-wrap justify-center gap-3 sm:gap-7">
+            <h2 class="tracking-wider mb-5 text-lg">SKILLS</h2>
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
                <div class="flex flex-col content-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/react.png" alt="react icon" loading="lazy" width="120" height="104"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">React</h3>
                </div>
@@ -121,7 +121,7 @@
                   data-aos-delay="50">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/ts.png" alt="typescript icon" loading="lazy" width="120" height="120"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">TypeScript</h3>
                </div>
@@ -129,7 +129,7 @@
                   data-aos-delay="100">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/nextjs.png" alt="nextjs icon" loading="lazy" width="120" height="135"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">NextJS</h3>
                </div>
@@ -137,7 +137,7 @@
                   data-aos-delay="150">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/tailwind.png" alt="tailwind icon" loading="lazy" width="120"
-                        height="73" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        height="73" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">Tailwind</h3>
                </div>
@@ -145,7 +145,7 @@
                   data-aos-delay="200">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/bootstrap.png" alt="bootstrap icon" loading="lazy" width="120"
-                        height="96" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        height="96" class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">Bootstrap</h3>
                </div>
@@ -153,7 +153,7 @@
                   data-aos-delay="250">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/java.png" alt="java icon" loading="lazy" width="120" height="120"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">Java</h3>
                </div>
@@ -161,7 +161,7 @@
                   data-aos-delay="300">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/php.png" alt="php icon" loading="lazy" width="120" height="65"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">PHP</h3>
                </div>
@@ -169,7 +169,7 @@
                   data-aos-delay="350">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/mysql.png" alt="mysql icon" loading="lazy" width="120" height="120"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">MySQL</h3>
                </div>
@@ -177,7 +177,7 @@
                   data-aos-delay="400">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/git.png" alt="git icon" loading="lazy" width="120" height="120"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">Git</h3>
                </div>
@@ -185,7 +185,7 @@
                   data-aos-delay="450">
                   <div class="min-h-[130px] flex flex-col justify-evenly">
                      <img src="assets/images/logo/figma.png" alt="figma icon" loading="lazy" width="120" height="120"
-                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[120px] transition">
+                        class="p-2 hover:scale-110 aspect-auto w-[90px] sm:w-[105px] transition">
                   </div>
                   <h3 class="text-center">Figma</h3>
                </div>
@@ -194,16 +194,16 @@
 
 
          <div class="mb-12 text-stone-300 text-lg">
-            <h2 class="text-xl tracking-wider mb-7">EDUCATION</h2>
+            <h2 class="text-lg tracking-wider mb-7">EDUCATION</h2>
 
             <!-- KPU -->
-            <div class="bg-[#3f0e14] p-12 border border-zinc-600 rounded-xl mb-[80px] relative">
+            <div class="bg-[#3f0e14] p-5 sm:p-12 border border-zinc-600 rounded-xl mb-[80px] relative text-sm">
                <img src="assets/images/kpu.png" alt="kpu arms" class="hidden lg:block absolute top-8 right-14"
                   width="300" height="293">
-               <h1 class="text-3xl mb-8">Kwantlen Polytechnic University</h1>
+               <h1 class="text-2xl mb-8">Kwantlen Polytechnic University</h1>
                <div class="mb-12">
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-award mr-4" viewBox="0 0 16 16">
                         <path
                            d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
@@ -212,7 +212,7 @@
                      <p>Bachelor of Technology: Information Technology</p>
                   </div>
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
                         class="bi bi-calendar-check mr-4" viewBox="0 0 16 16">
                         <path
                            d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0" />
@@ -222,14 +222,14 @@
                      <p>December 2024</p>
                   </div>
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-geo-alt-fill mr-4" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                      </svg>
                      <p>Surrey, BC</p>
                   </div>
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
                         class="bi bi-book mr-4" viewBox="0 0 16 16">
                         <path
                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
@@ -237,9 +237,9 @@
                      <p>GPA: 3.90 / 4.33</p>
                   </div>
                </div>
-               <h2 class="text-xl tracking-wider mb-2">AWARDS</h2>
+               <h2 class="text-lg tracking-wider mb-2">AWARDS</h2>
                <div class="flex flex-row items-center mb-12">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                      class="bi bi-mortarboard-fill mr-4" viewBox="0 0 16 16">
                      <path
                         d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z" />
@@ -248,11 +248,11 @@
                   </svg>
                   <p>Dean's Honour Roll (x7)</p>
                </div>
-               <h2 class="text-xl tracking-wider mb-6">NOTABLE CLASSES</h2>
-               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+               <h2 class="text-lg tracking-wider mb-6">NOTABLE CLASSES</h2>
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-16">
                   <div class="flex flex-col items-center group group">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info4105"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center">Search
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center">Search
                         Engine
                         Principles</a>
                      <p class="text-center">Covers how search engines work, including crawling, indexing, and ranking
@@ -260,13 +260,13 @@
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info3235"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center"> Software QA</a>
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center"> Software QA</a>
                      <p class="text-center">Focuses on software quality assurance practices such as testing methods,
                         automation, and defect tracking.</p>
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info4125"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center">Website and
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center">Website and
                         Cloud
                         Security</a>
                      <p class="text-center">Explores techniques to secure websites and cloud-based systems from common
@@ -274,7 +274,7 @@
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info3150"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center">Object Oriented
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center">Object Oriented
                         Software
                         Engineering</a>
                      <p class="text-center">Teaches software design using object-oriented principles, patterns, and
@@ -282,7 +282,7 @@
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info3171"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center">System
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center">System
                         Security</a>
                      <p class="text-center">Examines system-level security, including operating systems,
                         vulnerabilities,
@@ -290,14 +290,14 @@
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info3245"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center">Mobile
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center">Mobile
                         Programming</a>
                      <p class="text-center">Introduces mobile app development for platforms like Android and iOS, using
                         modern frameworks.</p>
                   </div>
                   <div class="flex flex-col items-center group lg:col-start-2">
                      <a href="http://www.kpu.ca/calendar/2019-20/courses/info/index.html#info3135"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center">Advanced Web App
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center">Advanced Web App
                         Development</a>
                      <p class="text-center">Covers advanced techniques in building dynamic, scalable, and responsive web
                         applications.</p>
@@ -307,11 +307,11 @@
 
             <!-- LANGARA -->
             <div
-               class="bg-[#1f1e1d] p-12 border border-zinc-600 rounded-xl text-white bg-[url(./assets/images/langara.png)] bg-contain bg-center bg-no-repeat">
-               <h1 class="text-3xl mb-8">Langara College</h1>
+               class="bg-[#1f1e1d] p-5 sm:p-12 border border-zinc-600 rounded-xl text-white bg-[url(./assets/images/langara.png)] bg-contain bg-center bg-no-repeat text-sm">
+               <h1 class="text-2xl mb-8">Langara College</h1>
                <div class="mb-12">
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-award mr-4" viewBox="0 0 16 16">
                         <path
                            d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
@@ -320,7 +320,7 @@
                      <p>Associate of Science: Computer Science</p>
                   </div>
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
                         class="bi bi-calendar-check mr-4" viewBox="0 0 16 16">
                         <path
                            d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0" />
@@ -330,18 +330,18 @@
                      <p>April 2021</p>
                   </div>
                   <div class="flex flex-row items-center mb-2">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                         class="bi bi-geo-alt-fill mr-4" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                      </svg>
                      <p>Vancouver, BC</p>
                   </div>
                </div>
-               <h2 class="text-xl tracking-wider mb-6">NOTABLE CLASSES</h2>
-               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+               <h2 class="text-lg tracking-wider mb-6">NOTABLE CLASSES</h2>
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-16">
                   <div class="flex flex-col items-center group group">
                      <a href="https://langara.ca/programs-courses/cpsc-2150"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center text-[#f15a22]">Algorithms
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center text-[#f15a22]">Algorithms
                         and Data
                         Structures</a>
                      <p class="text-center">Data structure topics including trees, graphs, recursion,
@@ -349,7 +349,7 @@
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="https://langara.ca/programs-courses/cpsc-1280"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center text-[#f15a22]">Unix
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center text-[#f15a22]">Unix
                         Tools and
                         Scripting</a>
                      <p class="text-center">Introduces command-line tools, scripting languages, and basic system
@@ -357,26 +357,25 @@
                   </div>
                   <div class="flex flex-col items-center group">
                      <a href="https://langara.ca/programs-courses/math-1271"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center text-[#f15a22]">Calculus
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center text-[#f15a22]">Calculus
                         I & II</a>
                      <p class="text-center">Differentiation and its applications, integration
                         techniques, applications, and infinite series.</p>
                   </div>
                   <div class="flex flex-col items-center group lg:col-start-2">
                      <a href="https://langara.ca/programs-courses/cpsc-2221"
-                        class="font-bold text-2xl tracking-wide group-hover:underline text-center text-[#f15a22]">Data
+                        class="font-bold text-xl tracking-wide group-hover:underline text-center text-[#f15a22]">Data
                         Base Systems</a>
                      <p class="text-center">Relational databases, SQL, and data modeling with hands-on projects
                         using MySQL.</p>
                   </div>
-
                </div>
             </div>
          </div>
       </div>
    </section>
 
-   <section id="projects" class="flex justify-center bg-primary pb-16 relative">
+   <section id="projects" class="bg-primary pb-16 relative">
       <!-- projects section background blob -->
       <svg class="hidden lg:block absolute inset-0 w-full h-full opacity-40" width="1440" height="1263"
          viewBox="0 0 1440 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -402,13 +401,13 @@
          </defs>
       </svg>
 
-      <div class="container w-full px-10 my-[100px] relative z-10">
-         <h1 class="text-5xl pb-8 font-bold">Projects</h1>
-         <div class="flex flex-col text-xs sm:text-lg gap-32">
+      <div class="container mx-auto max-w-screen-xl px-7 sm:px-10 my-[100px] relative z-10 ">
+         <h1 class="text-4xl pb-8 font-bold">Projects</h1>
+         <div class="flex flex-col text-sm sm:text-sm gap-12 sm:gap-32">
             <!-- KPU Scheduler -->
             <div class="card" data-aos="fade-right">
                <div>
-                  <h2 class="font-extrabold text-3xl">KPU Scheduler</h2>
+                  <h2 class="font-extrabold text-2xl">KPU Scheduler</h2>
                   <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
                   <p>For our capstone project, my team and I developed a web app for the IT department
                      head at KPU to streamline semester schedule management. Our product is far more efficient at
@@ -419,8 +418,8 @@
                   </p>
                </div>
                <div class="flex flex-col xl:flex-row-reverse gap-6 xl:gap-14">
-                  <img src="assets/images/project/thumb/kpuscheduler.png" alt="project image" width="600" height="405"
-                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <img src="assets/images/project/thumb/kpuscheduler.png" alt="project image" width="550" height="405"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer mx-auto">
                   <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
                      <div class="flex-1">
                         <ul class="list-disc pl-5">
@@ -463,7 +462,7 @@
             <!-- sports engine -->
             <div class="card" data-aos="fade-left">
                <div>
-                  <h2 class="font-extrabold text-3xl">Sports Search Engine</h2>
+                  <h2 class="font-extrabold text-2xl">Sports Search Engine</h2>
                   <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
                   <p>Sports Search Engine is a group project I worked on (alongside 4 others) for our SEO class at KPU.
                      It supports querying and indexing for 3 different media types:
@@ -474,8 +473,8 @@
                   </p>
                </div>
                <div class="flex flex-col xl:flex-row gap-6 xl:gap-14">
-                  <img src="assets/images/project/thumb/sports-engine.png" alt="project image" width="700" height="405"
-                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <img src="assets/images/project/thumb/sports-engine.png" alt="project image" width="600" height="405"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer mx-auto">
                   <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
                      <div class="flex-1">
                         <ul class="list-disc pl-5">
@@ -520,8 +519,8 @@
                      approach, and learned about what makes Tailwind powerful: its flexibility and reusability.</p>
                </div>
                <div class="flex flex-col xl:flex-row-reverse gap-6 xl:gap-14">
-                  <img src="assets/images/project/thumb/portfolio.png" alt="project image" width="700" height="386"
-                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <img src="assets/images/project/thumb/portfolio.png" alt="project image" width="600" height="386"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer mx-auto">
                   <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
                      <div class="flex-1">
                         <ul class="list-disc pl-5">
@@ -554,7 +553,7 @@
             <!-- pixl sketch -->
             <div class="card" data-aos="fade-left">
                <div>
-                  <h2 class="font-extrabold text-3xl">Pixl Sketch</h2>
+                  <h2 class="font-extrabold text-2xl">Pixl Sketch</h2>
                   <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
                   <p>Pixl sketch is an interactive drawing web app built using JavaScript and CSS, created as a
                      submission for
@@ -566,8 +565,8 @@
                   </p>
                </div>
                <div class="flex flex-col xl:flex-row gap-6 xl:gap-14">
-                  <img src="assets/images/project/thumb/pixl-sketch.png" alt="project image" width="700" height="405"
-                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <img src="assets/images/project/thumb/pixl-sketch.png" alt="project image" width="600" height="405"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer mx-auto">
                   <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
                      <div class="flex-1">
                         <ul class="list-disc pl-5">
@@ -603,7 +602,7 @@
             <!-- obsidian -->
             <div class="card" data-aos="fade-right">
                <div>
-                  <h2 class="font-extrabold text-3xl">Obsidian</h2>
+                  <h2 class="font-extrabold text-2xl">Obsidian</h2>
                   <div class="w-full h-1 my-5 bg-gradient-to-r from-[#0075FF] to-[#EB00FF]"></div>
                   <p>Obsidian is a full-stack ecommerce web application built by myself and one other teammate. The
                      website supports account registration,
@@ -613,8 +612,8 @@
                   </p>
                </div>
                <div class="flex flex-col xl:flex-row-reverse gap-6 xl:gap-14">
-                  <img src="assets/images/project/thumb/obsidian.png" alt="project image" width="700" height="349"
-                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer">
+                  <img src="assets/images/project/thumb/obsidian.png" alt="project image" width="600" height="349"
+                     loading="lazy" class="rounded-lg mb-auto hover:opacity-60 transition cursor-pointer mx-auto">
                   <div class="bg-opacity-20 xl:w-1/2 flex-1 flex flex-col">
                      <div class="flex-1">
                         <ul class="list-disc pl-5">
@@ -648,50 +647,52 @@
    </section>
 
    <section id="contact" class="min-h-screen bg-primary relative flex justify-center">
-      <div class="container w-full px-10 my-[100px] relative z-10">
-         <h1 class="text-5xl pb-8 font-bold">Contact</h1>
-         <div
-            class="w-full p-6 sm:p-12 bg-neutral-400 bg-opacity-10 backdrop-blur-[8px] rounded-xl border border-neutral-700">
-            <h1 class="text-4xl md:text-5xl lg:text-7xl mb-12">Let's 'Connect' &mdash;</h1>
-            <div class="text-base sm:text-xl lg:text-2xl mb-7">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                  class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
-                  <path
-                     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-               </svg>
-               <a href="mailto:ivanprovci@yahoo.com" class="sm:mr-5 hover:underline"
-                  target="_blank">ivanprovci@yahoo.com</a>
-
-               <button id="btn-copy-email" class="hidden sm:inline-block group bg-neutral-800 border-neutral-600 hover:bg-neutral-700 p-4 rounded-lg border 
-                        relative tooltip transition-colors" aria-label="copy email">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="max-h-10"
-                     viewBox="0 0 16 16">
-                     <path fill-rule="evenodd"
-                        d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+      <div class="container w-full pt-[70px] relative z-10">
+         <h1 class="text-4xl pb-8 font-bold mx-auto max-w-screen-xl px-7 sm:px-10">Contact</h1>
+         <div class="mx-auto max-w-screen-xl px-7 sm:px-10">
+            <div
+               class="px-10 p-6 sm:p-12 bg-neutral-400 bg-opacity-10 backdrop-blur-[8px] rounded-xl border border-neutral-700">
+               <h1 class="text-4xl md:text-4xl lg:text-5xl mb-12">Let's 'Connect' &mdash;</h1>
+               <div class="text-base sm:text-xl lg:text-xl mb-4 sm:mb-7">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                     <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
                   </svg>
-                  <span
-                     class="invisible group-hover:visible absolute text-base text-center px-2 py-1 rounded-md text-white bg-neutral-600 -top-11 -left-1">Copy</span>
-               </button>
+                  <a href="mailto:ivanprovci@yahoo.com" class="sm:mr-5 hover:underline"
+                     target="_blank">ivanprovci@yahoo.com</a>
 
-            </div>
-            <div class="text-base sm:text-xl lg:text-2xl mb-7">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                  class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
-                  <path
-                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-               </svg>
-               <a href="https://github.com/ivanprovci" target="_blank" class="hover:underline">github.com/ivanprovci</a>
-            </div>
-            <div class="text-base sm:text-xl lg:text-2xl mb-7">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                  class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
-                  <path
-                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-               </svg>
-               <a href="https://www.linkedin.com/in/ivanprovci/" target="_blank"
-                  class="hover:underline">linkedin/in/ivanprovci</a>
-            </div>
+                  <button id="btn-copy-email" class="hidden sm:inline-block group bg-neutral-800 border-neutral-600 hover:bg-neutral-700 p-4 rounded-lg border 
+                           relative tooltip transition-colors" aria-label="copy email">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="max-h-10"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                           d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                     </svg>
+                     <span
+                        class="invisible group-hover:visible absolute text-base text-center px-2 py-1 rounded-md text-white bg-neutral-600 -top-11 -left-1">Copy</span>
+                  </button>
 
+               </div>
+               <div class="text-base sm:text-xl lg:text-xl mb-4 sm:mb-7">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                     <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                  <a href="https://github.com/ivanprovci" target="_blank"
+                     class="hover:underline">github.com/ivanprovci</a>
+               </div>
+               <div class="text-base sm:text-xl lg:text-xl mb-4 sm:mb-7">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="inline-block max-w-6 sm:max-w-[50px] mr-2 sm:mr-5" viewBox="0 0 16 16">
+                     <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                  <a href="https://www.linkedin.com/in/ivanprovci/" target="_blank"
+                     class="hover:underline">linkedin/in/ivanprovci</a>
+               </div>
+            </div>
          </div>
       </div>
    </section>
